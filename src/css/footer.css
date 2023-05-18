@@ -1,0 +1,12 @@
+.footer-section{
+    background-color: var(--white-color);
+}
+.logo-name{
+    color: var(--red-color);
+}
+.navigation-links{
+    color: var(--red-color);
+}
+.contact-information{
+    color: var(--red-color);
+}
