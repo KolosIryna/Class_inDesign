@@ -1,2 +1,2 @@
-// Приклад підключення
-// import './js';
+import './js/modal';
+import './js/scrol';
