@@ -6,6 +6,7 @@
     .button-basket {
         display: none;
     }
+<<<<<<< Updated upstream
     .menu-mobile-open {
         padding: 0;
     
@@ -16,11 +17,29 @@
         border: none;
     }
 }
+=======
+
+    .menu-mobile-open {
+        padding: 0;
+
+        line-height: 0;
+
+        background-color: transparent;
+
+        border: none;
+    }
+}
+
+>>>>>>> Stashed changes
 .header {
     padding-top: 13px;
     padding-bottom: 13px;
     background-color: var(--withe-color);
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 .mobile-menu {
     display: none;
 }
@@ -42,6 +61,10 @@
     text-transform: uppercase;
     color: var(--text-red-color);
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 @media screen and (min-width: 768px) {
     .menu-mobile-open {
         display: none;
@@ -50,20 +73,37 @@
     .mobile-menu {
         display: none;
     }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     .button-basket {
         margin-left: auto;
         padding: 0;
 
         line-height: 0;
+<<<<<<< Updated upstream
     
         background-color: transparent;
     
         border: none;
     }
+=======
+
+        background-color: transparent;
+
+        border: none;
+    }
+
+>>>>>>> Stashed changes
     .header-link {
 
         color: var(--text-red-color);
     }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     .header-list {
         margin-right: 94px;
 
@@ -73,8 +113,16 @@
         gap: 16px;
     }
 }
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 @media screen and (min-width: 1280px) {
     .header-list {
         margin-right: 322px;
     }
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes
