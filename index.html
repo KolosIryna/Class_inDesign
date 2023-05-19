@@ -20,7 +20,7 @@
 
     
     <script type="module" crossorigin src="/Class_inDesign/assets/index-6d253f6d.js"></script>
-    <link rel="stylesheet" href="/Class_inDesign/assets/index-ec88d78f.css">
+    <link rel="stylesheet" href="/Class_inDesign/assets/index-dd223fdc.css">
   </head>
 
   <body>
@@ -168,21 +168,53 @@
 
     
     <!-- Modal window -->
-<div class="background is-hidden" data-modal>
+<div class="background is-hidden">
   <div class="modal">
-    <button class="modal-btn" type="button" data-modal-close>
-      <svg class="modal-icon" width="12" height="12">
-        <!-- <use href="./images/icon.svg#icon-close-black"></use> -->
+    <button class="modal-btn js-close-menu">
+      <svg
+        fill="currentColor"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+          clip-rule="evenodd"
+        ></path>
       </svg>
     </button>
 
-    <img
-      class="modal-img"
-      src="../img/modal2/kisspng-juice-frutti-di-bosco-raspberry-fruit-strawberry-berries-png-file-5a748ade7ae8b2 1mob@1x.png"
-      alt=""
-      width="238"
-      height="239"
-    />
+    <picture>
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../img/modal2/raspberrytab@1x.jpg 1x,
+          ../img/modal2/raspberrytab@1x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <!-- Phone screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../img/modal2/raspberrytab@1x.jpg 1x,
+          ../img/modal2/raspberrytab@2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+
+      <img
+        class="modal-img"
+        src="../img/modal2/raspberrytab@1x.jpg"
+        alt="raspberry"
+        width="207"
+        height="107"
+        loading="lazy"
+      />
+    </picture>
 
     <h2 class="modal-title">THANK YOU</h2>
     <p class="modal-text">
