@@ -17,12 +17,12 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .background.is-hidden {
+.background.is-hidden {
   opacity: 0;
   visibility: hidden;
 
   pointer-events: none;
-} */
+}
 
 .modal {
   position: absolute;
@@ -71,21 +71,19 @@
   width: 24px;
   height: 24px;
 
-  color: var(--bgr-navy-blue);
-  background-color: var(--cornflower);
+  color: ;
+  background-color: ;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
 
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
 .modal-btn:focus {
-  fill: var(--withe-color);
-  background-color: var(--pressed-state-color);
+  fill: ;
+  background-color: ;
 }
 
 .modal-img {
