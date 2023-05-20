@@ -1,3 +1,6 @@
+:root {
+    --transition-dur-timing-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 @media screen and (max-width: 767px) {
     .nav {
         display: none;
@@ -98,22 +101,20 @@
     top: 0;
 
     width: 100%;
-    height: calc(100vh - 50px);
+    height: 100%;
 
-    display: flex;
-
-    overflow: scroll;
+   
     opacity: 0;
 
     background-color: var(--text-red-color);
 
-    transform: translateY(100%);
+    transform: translateX(100%);
     transition: transform var(--transition-dur-timing-func), opacity var(--transition-dur-timing-func);
 }
 
 .mobil-menu-modal {
     position: relative;
-    padding-top: 174px;
+    padding-top: 124px;
     display: flex;
     flex-direction: column;
 
@@ -122,13 +123,13 @@
 .mobile-menu.is-open {
     opacity: 1;
 
-    transform: translateY(0);
+    transform: translateY(50px);
     transition: transform var(--transition-dur-timing-func), opacity var(--transition-dur-timing-func);
 }
 
 .mobile-menu-close {
     position: absolute;
-    top: 13px;
+    top: -37px;
     right: 20px;
     width: 24px;
     height: 24px;
