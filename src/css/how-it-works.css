@@ -1,0 +1,95 @@
+.how-it-works {
+}
+
+@media only screen and (min-width: 375px) {
+  .h-i-w-title-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 335px;
+    height: auto;
+    margin-bottom: 44px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .h-i-w-title-box {
+    width: 624px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .h-i-w-title {
+    width: 100%;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .h-i-w-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+}
+
+/* Desktop style */
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .h-i-w-paragraph {
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.28;
+    text-align: center;
+    letter-spacing: -0.04em;
+    color: var(--white-color);
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .h-i-w-paragraph {
+    width: 509px;
+  }
+}
+
+.h-i-w-cards-box {
+}
+.list {
+}
+.h-i-w-cards-list {
+}
+.h-i-w-card {
+}
+.h-i-w-card-box {
+}
+.img {
+}
+.card-img {
+}
+.h-i-w-steps {
+}
+.first {
+}
+.h-i-w-card-text {
+}
+.second {
+}
+.third {
+}
+.h-i-w-gif-box {
+}
+.h-i-w-gif-img {
+}
