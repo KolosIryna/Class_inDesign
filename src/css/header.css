@@ -1,6 +1,3 @@
-:root {
-    --transition-dur-timing-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 @media screen and (max-width: 767px) {
     .nav {
         display: none;
@@ -25,6 +22,8 @@
 }
 
 .header {
+    /* position: fixed;
+    width: 100%; */
     padding-top: 13px;
     padding-bottom: 13px;
     background-color: var(--white-color);
@@ -47,21 +46,20 @@
     text-transform: uppercase;
     color: var(--text-red-color);
 
-    fill: var(--text-red-color);
+    fill: var(--red-color);
 }
 
 @media screen and (min-width: 768px) {
+    .header {
+        padding-top: 11px;
+        padding-bottom: 11px;
+    }
     .menu-mobile-open {
         display: none;
     }
     .basket {
-        fill: var(--text-red-color);
+        fill: var(--red-color);
     }
-
-    .mobile-menu {
-        display: none;
-    }
-
     .button-basket {
         margin-left: auto;
         padding: 0;
@@ -74,7 +72,6 @@
     }
 
     .header-link {
-
         color: var(--text-red-color);
     }
 
@@ -93,6 +90,7 @@
         margin-right: 322px;
     }
 }
+
 .mobile-menu {
     position: fixed;
     z-index: 1000;
@@ -103,13 +101,16 @@
     width: 100%;
     height: 100%;
 
-   
     opacity: 0;
 
-    background-color: var(--text-red-color);
+    background-color: var(--red-color);
 
-    transform: translateX(100%);
-    transition: transform var(--transition-dur-timing-func), opacity var(--transition-dur-timing-func);
+    transform: translate(100%, 50px);
+    
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .mobil-menu-modal {
@@ -117,14 +118,15 @@
     padding-top: 124px;
     display: flex;
     flex-direction: column;
-
 }
 
 .mobile-menu.is-open {
     opacity: 1;
 
     transform: translateY(50px);
-    transition: transform var(--transition-dur-timing-func), opacity var(--transition-dur-timing-func);
+    transition-property: transform, opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-close {
@@ -147,10 +149,9 @@
 }
 
 .mobile-menu-close-icon {
-    stroke: var(--text-red-color);
+    stroke: var(--red-color);
 }
 .button-basket-mobil {
-
     padding: 0;
 
     line-height: 0;
