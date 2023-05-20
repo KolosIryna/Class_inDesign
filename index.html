@@ -20,7 +20,7 @@
 
     
     <script type="module" crossorigin src="/Class_inDesign/assets/index-6d253f6d.js"></script>
-    <link rel="stylesheet" href="/Class_inDesign/assets/index-dd223fdc.css">
+    <link rel="stylesheet" href="/Class_inDesign/assets/index-b919e8df.css">
   </head>
 
   <body>
@@ -31,50 +31,55 @@
     
     
     
-    <section class="contacts">
+    <section class="container contacts">
   <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
-  <div>
-    <picture>
+  <div class="contacts-fruit">
+    <picture class="contacts-picture-one">
       <source
         media="(min-width: 1280px)"
-        srcset="/Class_inDesign/assets/img1desk@1x-ad546a02.jpg 1x, /Class_inDesign/assets/img1desk@2x-d3ff2c80.jpg 2x"
-        type="image/jpg"
+        srcset="/Class_inDesign/assets/img1desk@1x-50340a62.png 1x, /Class_inDesign/assets/img1desk@2x-c73a6f7b.png 2x"
+        type="image/png"
       />
       <source
         media="(min-width: 768px)"
-        srcset="/Class_inDesign/assets/img1tab@1x-18984d47.jpg 1x, /Class_inDesign/assets/img1tab@2x-369c9add.jpg 2x"
-        type="image/jpg"
+        srcset="/Class_inDesign/assets/img1tab@1x-77664355.png 1x, /Class_inDesign/assets/img1tab@2x-2049f000.png 2x"
+        type="image/png"
       />
       <source
         media="(max-width: 767px)"
-        srcset="/Class_inDesign/assets/img1mob@1x-2aec30a0.jpg 1x, /Class_inDesign/assets/img1mob@2x-3083a1a0.jpg 2x"
-        type="image/jpg"
+        srcset="/Class_inDesign/assets/img1mob@1x-aa20a7ef.png 1x, /Class_inDesign/assets/img1mob@2x-ec7555dc.png 2x"
+        type="image/png"
       />
-
       <img
-        src="/Class_inDesign/assets/img1mob@1x-2aec30a0.jpg"
-        alt="Melon"
-        width="335"
-        height="476"
+        class="img-one"
+        srcset="/Class_inDesign/assets/img1mob@1x-aa20a7ef.png 335w, /Class_inDesign/assets/img1tab@1x-77664355.png 344w, /Class_inDesign/assets/img1desk@1x-50340a62.png 792w"
+        sizes="(min-width: 1280px) 792px, (min-width: 768px) 344px, (max-width: 767px) 335px, 100vw"
+        src="/Class_inDesign/assets/img1mob@1x-aa20a7ef.png"
+        alt="melon"
+        loading="lazy"
+        width="335px"
       />
     </picture>
     <picture class="contacts-picture-two">
       <source
         media="(min-width: 1280px)"
-        srcset="/Class_inDesign/assets/img2desk@1x-f03a5bd8.jpg 1x, /Class_inDesign/assets/img2desk@2x-5ce0ada2.jpg 2x"
-        type="image/jpg"
+        srcset="/Class_inDesign/assets/img2desk@1x-79c1af51.png 1x, /Class_inDesign/assets/img2desk@2x-6947a515.png 2x"
+        type="image/png"
       />
       <source
         media="(min-width: 768px)"
-        srcset="/Class_inDesign/assets/img2tab@1x-b0feb706.jpg 1x, /Class_inDesign/assets/img2tab@2x-bce427cf.jpg 2x"
-        type="image/jpg"
+        srcset="/Class_inDesign/assets/img2tab@1x-c39fc68a.png 1x, /Class_inDesign/assets/img2tab@2x-29e8f9b2.png 2x"
+        type="image/png"
       />
 
       <img
-        src="/Class_inDesign/assets/img2tab@1x-b0feb706.jpg"
-        alt="Melon"
-        width="344"
-        height="480"
+        class="img-two"
+        srcset="/Class_inDesign/assets/img2tab@1x-c39fc68a.png 344w, /Class_inDesign/assets/img2desk@1x-79c1af51.png 500w"
+        sizes="(min-width: 1280px) 500px, (min-width: 768px) 344px, 100vw"
+        src="/Class_inDesign/assets/img2tab@1x-c39fc68a.png"
+        alt="blueberry"
+        loading="lazy"
+        width="344px"
       />
     </picture>
   </div>
@@ -90,6 +95,7 @@
         type="email"
         required
         placeholder="Enter email..."
+        pattern="^(?=.*[a-z])(?=.*[A-Z])"
     /></label>
     <button class="contacts-button" type="submit">Send</button>
   </form>
