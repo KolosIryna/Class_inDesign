@@ -1,6 +1,6 @@
 /**
   |============================
-  |     Modal window
+  |     Modal window 2
   |============================
 */
 .background {
@@ -23,7 +23,7 @@
   pointer-events: none;
 }
 
-.modal {
+.modal-mob {
   position: absolute;
   top: 50%;
   left: 50%;
