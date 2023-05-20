@@ -1,5 +1,5 @@
 /* ======================= Hero ========================== */
-/* Hero upper part */
+/* Верхня частина hero */
 .hero-container {
     padding-bottom: 80px;
   
@@ -75,6 +75,80 @@
     letter-spacing: -0.04em;
   }
   
+  /* Hero bottom part */
+  .hero-bottom-part {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 44px;
+  }
   
+  .hero-fruit-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    max-width: 249px;
+    min-height: 387px;
+  
+    background-color: var(--green-color);
+    border-radius: 500px;
+  }
+  
+  .hero-card-title {
+    margin-top: 28px;
+    margin-bottom: 61px;
+  
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  }
+  
+  .fruit-card-descr {
+    max-width: 155px;
+    margin-bottom: 40px;
+  
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  }
+  
+  .hero-second-card {
+    background-color: var(--yellow-color);
+  }
+  
+  .hero-hashtag-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .hero-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    height: 38px;
+    padding: 12px 32px;
+  
+    border: 1px solid var(--white-color);
+    border-radius: 1000px;
+  }
+  
+  .hero-hashtag-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  }
   
   /* ======================= /Hero ========================== */
