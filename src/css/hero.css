@@ -1,135 +1,80 @@
-* {
-    box-sizing: border-box;
-  }
-  .hero-section {
-    padding-top: 56px;
+/* ======================= Hero ========================== */
+/* Hero upper part */
+.hero-container {
     padding-bottom: 80px;
-    color: #ffffff;
+  
+    background-color: var(--red-color);
   }
-  .hero-section .container {
-    position: relative;
+  
+  .hero-upper-part {
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding-top: 48px;
+    align-items: center;
   
-    background-image: url(../img/hero/banana_mobile@1x.png),
-      url(../img/hero/strawberry_mobile@1x.png);
-    background-repeat: no-repeat;
+    margin-bottom: 44px;
+  }
   
-    outline: 1px solid white;
-  }
-  .container {
-  }
-  .hero-title {
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    text-align: center;
-    max-width: 335px;
+  .hero-header {
     font-weight: 500;
     font-size: 28px;
     line-height: 1;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
+    text-align: center;
+    color: var(--white-color);
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   }
-  .hero-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    order: 2;
-  }
-  .hero-text {
-    margin-bottom: 44px;
-    text-align: start;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.29;
-    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  }
-  .text {
-    display: block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.17;
-    margin-bottom: 61px;
-  }
-  .list {
-  }
-  .wraper-left {
-    margin-bottom: 44px;
-    width: 249px;
-    height: 387px;
-    background: #a4cb66;
+  
+  .hero-girl-img {
     border-radius: 500px;
-    padding: 28px 25px 40px 24px;
+    background-color: var(--white-color);
   }
-  .wraper-left > img {
-    margin-bottom: 9px;
-  }
-  .hero-subtitle {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.17;
-    text-transform: uppercase;
-    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  }
-  .hero-center {
-    margin-bottom: 71px;
-    position: relative;
-    order: 1;
-  }
-  .hero-img {
-    padding: 20px 17px;
+  
+  .hero-girl-container {
+    outline: 1px solid white;
+    outline-offset: 12px;
     border-radius: 500px;
-    border: 1px solid;
   }
-  .btn-link {
-    position: absolute;
-    bottom: -30px;
-    right: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  
+  .hero-btn {
+    padding: 20px 12px;
     width: 80px;
     height: 80px;
-    color: var(--color-bg-red);
-    background-color: #fff;
+  
+    border: none;
     border-radius: 50%;
+    background-color: var(--white-color);
   
     font-weight: 500;
     font-size: 20px;
     line-height: 1;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+  }
+  
+  .hero-btn-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: -0.04em;
     text-transform: uppercase;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-    transform: rotate(-14deg);
+    color: var(--red-color);
+  }
   
-    /* transform: translateX(0%); */
+  .hero-text-container {
+    display: block;
+    max-width: 279px;
+    margin: 0 auto 44px;
   }
-  .hero-right {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    order: 3;
-  }
-  .hero-right .wraper-left {
-    background: #f5ce13;
-  }
-  .list-btn {
-    margin-bottom: 44px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  .hero-link-item {
-    flex-basis: calc((100% - 8px) / 2);
-  }
-  .hero-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   
-    padding: 12px 32px;
-    border: 1px solid #ffffff;
-    border-radius: 1000px;
+  .hero-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.04em;
   }
+  
+  
+  
+  /* ======================= /Hero ========================== */
