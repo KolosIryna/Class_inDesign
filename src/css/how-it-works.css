@@ -1,9 +1,9 @@
 .how-it-works {
 }
 
-@media only screen and (max-width: 3745px) {
+@media only screen and (max-width: 374px) {
   .h-i-w-title-box {
-    display: flex;
+        display: flex;
     flex-direction: column;
     align-items: center;
     gap: 14px;
@@ -13,8 +13,7 @@
     margin-right: auto;
     margin-left: auto;
     padding: 0;
-  }
-}
+  }}
 
 @media only screen and (min-width: 375px) {
   .h-i-w-title-box {
@@ -39,7 +38,7 @@
 
 @media only screen and (max-width: 374px) {
   .h-i-w-title {
-    width: 100%;
+    width: calc(100vw - 30px);
     font-style: normal;
     font-size: 28px;
     line-height: 1;
@@ -74,7 +73,7 @@
 
 @media only screen and (max-width: 374px) {
   .h-i-w-paragraph {
-    width: 100%;
+    width: calc(100vw - 30px);
     font-size: 14px;
     line-height: 1.28;
     text-align: center;
@@ -120,40 +119,118 @@
   }
 }
 
+/* 
+@media only screen and (min-width: 375px) {
+}
+
 @media only screen and (min-width: 768px) {
-
-
-
 }
 
 @media only screen and (min-width: 1280px) {
+} */
+
+@media only screen and (max-width: 374px) {
+  .h-i-w-cards-list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.h-i-w-cards-list {
+@media only screen and (min-width: 375px) {
+  .h-i-w-cards-list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .h-i-w-cards-list {
+    flex-direction: row;
+  }
+}
+/* .h-i-w-cards-list {
   display: flex;
   gap: 20px;
   flex-direction: column;
   flex-wrap: nowrap;
 
   justify-content: center;
+} */
+
+@media only screen and (max-width: 374px) {
+  .h-i-w-card {
+    width: calc(100vw - 30px);
+    background: var(--white-color);
+    border-radius: 20px;
+  }
 }
-.h-i-w-card {
-  width: 335px;
-  /* left: 0px;
-  top: 0px; */
-  background: var(--white-color);
-  border-radius: 20px;
+@media only screen and (min-width: 375px) {
+  .h-i-w-card {
+    width: 335px;
+    background: var(--white-color);
+    border-radius: 20px;
+  }
 }
-.h-i-w-card-box {
-  width: 335px;
-  min-height: 112px;
-  padding: 20px;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  gap: 14px;
+
+@media only screen and (min-width: 768px) {
+  .h-i-w-card {
+    width: 389px;
+  }
+}
+
+/* @media only screen and (min-width: 1280px) {
+ 
+} */
+
+@media only screen and (max-width: 374px) {
+  .h-i-w-card-box {
+    width: 100%;
+    min-height: 112px;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .h-i-w-card-box {
+    width: 100%;
+    min-height: 112px;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .h-i-w-card-box {
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .h-i-w-steps-box {
@@ -176,18 +253,40 @@
   color: var(--white-color);
 }
 
-.h-i-w-card-text {
-  display: flex;
-  width: 145px;
-  height: 72px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.28;
-  align-items: center;
-  text-align: start;
-  letter-spacing: -0.04em;
-  color: var(--text-black-color);
+@media only screen and (max-width: 374px) {
+  .h-i-w-card-text {
+    display: flex;
+    width: 145px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    align-items: center;
+    text-align: start;
+    letter-spacing: -0.04em;
+    color: var(--text-black-color);
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .h-i-w-card-text {
+    display: flex;
+    width: 145px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+    align-items: center;
+    text-align: start;
+    letter-spacing: -0.04em;
+    color: var(--text-black-color);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .h-i-w-card-text {
+    width: 199px;
+  }
 }
 
 .h-i-w-steps-box.first {
