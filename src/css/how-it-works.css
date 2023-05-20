@@ -3,7 +3,7 @@
 
 @media only screen and (max-width: 374px) {
   .h-i-w-title-box {
-        display: flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 14px;
@@ -13,7 +13,8 @@
     margin-right: auto;
     margin-left: auto;
     padding: 0;
-  }}
+  }
+}
 
 @media only screen and (min-width: 375px) {
   .h-i-w-title-box {
@@ -101,10 +102,20 @@
   }
 }
 
-/* Desktop style */
 @media only screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .h-i-w-cards-box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 44px;
   }
 }
 
@@ -156,15 +167,6 @@
     flex-direction: row;
   }
 }
-/* .h-i-w-cards-list {
-  display: flex;
-  gap: 20px;
-  flex-direction: column;
-  flex-wrap: nowrap;
-
-  justify-content: center;
-} */
-
 @media only screen and (max-width: 374px) {
   .h-i-w-card {
     width: calc(100vw - 30px);
@@ -185,11 +187,6 @@
     width: 389px;
   }
 }
-
-/* @media only screen and (min-width: 1280px) {
- 
-} */
-
 @media only screen and (max-width: 374px) {
   .h-i-w-card-box {
     width: 100%;
@@ -203,7 +200,6 @@
     gap: 14px;
   }
 }
-
 @media only screen and (min-width: 375px) {
   .h-i-w-card-box {
     width: 100%;
@@ -217,7 +213,6 @@
     gap: 14px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .h-i-w-card-box {
     padding: 40px 20px;
@@ -232,7 +227,6 @@
     height: 100%;
   }
 }
-
 .h-i-w-steps-box {
   width: 136px;
   height: 48px;
@@ -251,15 +245,18 @@
   align-items: center;
   letter-spacing: -0.04em;
   color: var(--white-color);
+  animation: tracking-in-contract-bck 1500ms cubic-bezier(0.215, 0.61, 0.355, 1)
+    1800ms both;
 }
 
 @media only screen and (max-width: 374px) {
   .h-i-w-card-text {
     display: flex;
-    width: 145px;
+    /* width: calc(100vw - 30px); */
+    height: auto;
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.28;
     align-items: center;
     text-align: start;
