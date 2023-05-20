@@ -1,0 +1,124 @@
+/**
+  |============================
+  |     Modal window
+  |============================
+*/
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+}
+
+.background.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+
+  pointer-events: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+
+  width: 335px;
+  min-height: 426px;
+  padding: 40px 20px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e03f5e;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .modal {
+    width: calc(100% - 30px);
+  }
+}
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 600px;
+    min-height: 545px;
+    padding: 68px 104px 80px 104px;
+  }
+}
+
+.modal-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+
+  color: var(--white-color);
+  background-color: #e03f5e;
+
+  cursor: pointer;
+}
+
+/* .modal-btn:hover,
+.modal-btn:focus {
+  fill: rgba(174, 19, 50, 0.1);
+} */
+
+.modal__cross {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  fill: #444;
+  cursor: pointer;
+}
+.modal-img {
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-img {
+    margin-bottom: 28px;
+  }
+}
+
+.modal-title {
+  margin-bottom: 14px;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.04em;
+
+  color: var(--text-withe-color);
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+.modal-text {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  letter-spacing: -0.04em;
+
+  color: var(--text-withe-color);
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
