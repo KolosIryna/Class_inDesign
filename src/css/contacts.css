@@ -1,0 +1,148 @@
+.contacts {
+  position: relative;
+}
+.container.contacts {
+  margin-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .container.contacts {
+    margin-bottom: 144px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container.contacts {
+    margin-bottom: 150px;
+  }
+}
+.contacts-title {
+  position: absolute;
+  top: -53px;
+  left: 20px;
+  width: 335px;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .contacts-title {
+    font-size: 54px;
+
+    width: 648px;
+    left: 60px;
+    top: -80px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contacts-title {
+    font-size: 64px;
+
+    width: 740px;
+    left: 270px;
+    top: -89px;
+  }
+}
+.contacts-fruit {
+  display: flex;
+  gap: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .contacts-fruit {
+    gap: 16px;
+    margin-bottom: 80px;
+  }
+}
+.contacts-picture-one {
+}
+.contacts-picture-two {
+}
+.img-one {
+}
+@media only screen and (min-width: 768px) {
+  .img-one {
+    width: 344px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .img-one {
+    width: 792px;
+  }
+}
+.img-two {
+}
+@media only screen and (min-width: 1280px) {
+  .img-two {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contacts-picture-two {
+    display: none;
+  }
+}
+.contacts-text {
+  width: 492px;
+
+  text-align: center;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+@media only screen and (max-width: 767px) {
+  .contacts-text {
+    display: none;
+  }
+}
+.contacts-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 767px) {
+  .contacts-form {
+    display: none;
+  }
+}
+.contacts-label {
+}
+::placeholder {
+  color: var(--text-withe-color);
+  font-size: 14px;
+  line-height: 1.29;
+  opacity: 1;
+}
+.contacts-mail {
+  padding-left: 16px;
+  width: 292px;
+  height: 48px;
+
+  opacity: 0.4;
+
+  border: 1px solid var(--white-color);
+  border-radius: 24px;
+  background-color: transparent;
+}
+
+.contacts-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 102px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  color: var(--text-withe-color);
+  background-color: var(--green-color);
+}
