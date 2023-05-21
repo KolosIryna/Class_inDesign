@@ -1,0 +1,48 @@
+<!-- Modal window -->
+<div class="background is-hidden" data-modal="2">
+  <div class="modal-thank">
+    <button class="modal-btn" type="button" js-modal-close>
+      <svg class="modal-close-iconx js-modal-close" width="12" height="12">
+        <use href="./img/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <picture>
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../img/modal2/raspberrymob@1x.webp 1x,
+          ../img/modal2/raspberrymob@2x.webp 2x
+        "
+        type="image/jpg"
+      />
+      <!-- Phone screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../img/modal2/raspberrytab@1x.webp 1x,
+          ../img/modal2/raspberrytab@2x.webp 2x
+        "
+        type="image/jpg"
+      />
+
+      <img
+        class="modal-img"
+        src="../img/modal2/raspberrymob@1x.webp "
+        alt="raspberry"
+        width="207"
+        height="107"
+        loading="lazy"
+      />
+    </picture>
+
+    <h2 class="modal-title">THANK YOU</h2>
+    <p class="modal-text">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
+</div>

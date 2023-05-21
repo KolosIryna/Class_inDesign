@@ -1,62 +1,63 @@
-<section class="contacts">
+<!-- Contacts (Іван Бігун)-->
+<section class="container contacts">
   <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
-  <div>
+  <div class="contacts-fruit">
     <picture>
       <source
         media="(min-width: 1280px)"
         srcset="
-          ./img/contacts/img1desk@1x.jpg 1x,
-          ./img/contacts/img1desk@2x.jpg 2x
+          ./img/contacts/img1desk@1x.webp 1x,
+          ./img/contacts/img1desk@2x.webp 2x
         "
         type="image/jpg"
       />
       <source
         media="(min-width: 768px)"
         srcset="
-          ./img/contacts/img1tab@1x.jpg 1x,
-          ./img/contacts/img1tab@2x.jpg 2x
+          ./img/contacts/img1tab@1x.webp 1x,
+          ./img/contacts/img1tab@2x.webp 2x
         "
         type="image/jpg"
       />
       <source
         media="(max-width: 767px)"
         srcset="
-          ./img/contacts/img1mob@1x.jpg 1x,
-          ./img/contacts/img1mob@2x.jpg 2x
+          ./img/contacts/img1mob@1x.webp 1x,
+          ./img/contacts/img1mob@2x.webp 2x
         "
         type="image/jpg"
       />
-
       <img
-        src="./img/contacts/img1mob@1x.jpg"
-        alt="Melon"
+        class="img-one"
+        src="./img/contacts/img1mob@1x.webp"
+        alt="Banking App"
         width="335"
-        height="476"
       />
     </picture>
+
     <picture class="contacts-picture-two">
       <source
         media="(min-width: 1280px)"
         srcset="
-          ./img/contacts/img2desk@1x.jpg 1x,
-          ./img/contacts/img2desk@2x.jpg 2x
+          ./img/contacts/img2desk@1x.webp 1x,
+          ./img/contacts/img2desk@2x.webp 2x
         "
         type="image/jpg"
       />
       <source
         media="(min-width: 768px)"
         srcset="
-          ./img/contacts/img2tab@1x.jpg 1x,
-          ./img/contacts/img2tab@2x.jpg 2x
+          ./img/contacts/img2tab@1x.webp 1x,
+          ./img/contacts/img2tab@2x.webp 2x
         "
         type="image/jpg"
       />
 
       <img
-        src="./img/contacts/img2tab@1x.jpg"
-        alt="Melon"
+        class="img-two"
+        src="./img/contacts/img2tab@1x.webp"
+        alt="Banking App"
         width="344"
-        height="480"
       />
     </picture>
   </div>
@@ -66,13 +67,18 @@
     your box today and start enjoying the best that nature has to offer!
   </p>
   <form class="contacts-form">
-    <label class="contacts-label">
-      <input
-        class="contacts-mail"
-        type="email"
-        required
-        placeholder="Enter email..."
-    /></label>
-    <button class="contacts-button" type="submit">Send</button>
+    <div class="contacts-input-box">
+      <label class="contacts-label">
+        <input
+          class="contacts-mail"
+          type="email"
+          name="email"
+          required
+          placeholder="Enter email..."
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+      </label>
+      <button class="contacts-button" type="submit">Send</button>
+    </div>
   </form>
 </section>
