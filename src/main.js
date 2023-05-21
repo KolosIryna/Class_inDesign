@@ -1,2 +1,3 @@
-import './js/modal';
-import './js/scrol';
+@import './js/modal.js';
+@import './js/mobile-menu.js';
+@import './js/scrol.js';
