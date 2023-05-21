@@ -305,7 +305,7 @@
 @keyframes move-to-bottom {
   0% {
     opacity: 0;
-    transform: translateY(-60px);
+    transform: translateY(-40px);
   }
   50% {
     opacity: 0.6;
