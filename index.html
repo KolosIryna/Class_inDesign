@@ -489,9 +489,17 @@
           placeholder="Enter email..."
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
         />
-      </label>
-      <button class="contacts-button" type="submit">Send</button>
-    </div>
+
+        <button
+          class="contacts-button js-open-modal"
+          type="submit"
+          data-modal="2"
+        >
+          Send
+        </button>
+      </div>
+    </label>
+
   </form>
 </section>
 
@@ -946,25 +954,19 @@
       <!-- Tablet screen -->
       <source
         media="(min-width: 768px)"
-        srcset="
-          ../img/modal2/raspberrymob@1x.webp 1x,
-          ../img/modal2/raspberrymob@2x.webp 2x
-        "
+        srcset="/Class_inDesign/assets/raspberrymob@1x-8c21aa87.webp 1x, /Class_inDesign/assets/raspberrymob@2x-11c05716.webp 2x"
         type="image/jpg"
       />
       <!-- Phone screen -->
       <source
         media="(max-width: 767px)"
-        srcset="
-          ../img/modal2/raspberrytab@1x.webp 1x,
-          ../img/modal2/raspberrytab@2x.webp 2x
-        "
+        srcset="/Class_inDesign/assets/raspberrytab@1x-74218f0d.webp 1x, /Class_inDesign/assets/raspberrytab@2x-47007e30.webp 2x"
         type="image/jpg"
       />
 
       <img
         class="modal-img"
-        src="../img/modal2/raspberrymob@1x.webp "
+        src="./img/modal2/raspberrymob@1x.webp "
         alt="raspberry"
         width="207"
         height="107"
