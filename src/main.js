@@ -1,2 +1,2 @@
-import './js/modal';
-import './js/scrol';
+import './js/modal.js';
+import './js/scrol.js';
