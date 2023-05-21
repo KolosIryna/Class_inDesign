@@ -20,7 +20,7 @@
 
     
     <script type="module" crossorigin src="/Class_inDesign/assets/index-6d253f6d.js"></script>
-    <link rel="stylesheet" href="/Class_inDesign/assets/index-5cdee5b5.css">
+    <link rel="stylesheet" href="/Class_inDesign/assets/index-044e2148.css">
   </head>
 
   <body>
@@ -217,52 +217,47 @@
     <section class="container contacts">
   <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
   <div class="contacts-fruit">
-    <picture class="contacts-picture-one">
+    <picture>
       <source
         media="(min-width: 1280px)"
-        srcset="/Class_inDesign/assets/img1desk@1x-50340a62.png 1x, /Class_inDesign/assets/img1desk@2x-c73a6f7b.png 2x"
-        type="image/png"
+        srcset="/Class_inDesign/assets/img1desk@1x-61aa726f.webp 1x, /Class_inDesign/assets/img1desk@2x-066d2b14.webp 2x"
+        type="image/jpg"
       />
       <source
         media="(min-width: 768px)"
-        srcset="/Class_inDesign/assets/img1tab@1x-77664355.png 1x, /Class_inDesign/assets/img1tab@2x-2049f000.png 2x"
-        type="image/png"
+        srcset="/Class_inDesign/assets/img1tab@1x-a225e12b.webp 1x, /Class_inDesign/assets/img1tab@2x-5ca7d882.webp 2x"
+        type="image/jpg"
       />
       <source
         media="(max-width: 767px)"
-        srcset="/Class_inDesign/assets/img1mob@1x-aa20a7ef.png 1x, /Class_inDesign/assets/img1mob@2x-ec7555dc.png 2x"
-        type="image/png"
+        srcset="/Class_inDesign/assets/img1mob@1x-b8fdb199.webp 1x, /Class_inDesign/assets/img1mob@2x-d65fb6d7.webp 2x"
+        type="image/jpg"
       />
       <img
         class="img-one"
-        srcset="/Class_inDesign/assets/img1mob@1x-aa20a7ef.png 335w, /Class_inDesign/assets/img1tab@1x-77664355.png 344w, /Class_inDesign/assets/img1desk@1x-50340a62.png 792w"
-        sizes="(min-width: 1280px) 792px, (min-width: 768px) 344px, (max-width: 767px) 335px, 100vw"
-        src="/Class_inDesign/assets/img1mob@1x-aa20a7ef.png"
-        alt="melon"
-        loading="lazy"
-        width="335px"
+        src="/Class_inDesign/assets/img1mob@1x-b8fdb199.webp"
+        alt="Banking App"
+        width="335"
       />
     </picture>
+
     <picture class="contacts-picture-two">
       <source
         media="(min-width: 1280px)"
-        srcset="/Class_inDesign/assets/img2desk@1x-79c1af51.png 1x, /Class_inDesign/assets/img2desk@2x-6947a515.png 2x"
-        type="image/png"
+        srcset="/Class_inDesign/assets/img2desk@1x-3f2b3291.webp 1x, /Class_inDesign/assets/img2desk@2x-02f4145c.webp 2x"
+        type="image/jpg"
       />
       <source
         media="(min-width: 768px)"
-        srcset="/Class_inDesign/assets/img2tab@1x-c39fc68a.png 1x, /Class_inDesign/assets/img2tab@2x-29e8f9b2.png 2x"
-        type="image/png"
+        srcset="/Class_inDesign/assets/img2tab@1x-c632754d.webp 1x, /Class_inDesign/assets/img2tab@2x-3c116846.webp 2x"
+        type="image/jpg"
       />
 
       <img
         class="img-two"
-        srcset="/Class_inDesign/assets/img2tab@1x-c39fc68a.png 344w, /Class_inDesign/assets/img2desk@1x-79c1af51.png 500w"
-        sizes="(min-width: 1280px) 500px, (min-width: 768px) 344px, 100vw"
-        src="/Class_inDesign/assets/img2tab@1x-c39fc68a.png"
-        alt="blueberry"
-        loading="lazy"
-        width="344px"
+        src="/Class_inDesign/assets/img2tab@1x-c632754d.webp"
+        alt="Banking App"
+        width="344"
       />
     </picture>
   </div>
@@ -273,14 +268,17 @@
   </p>
   <form class="contacts-form">
     <label class="contacts-label">
-      <input
-        class="contacts-mail"
-        type="email"
-        required
-        placeholder="Enter email..."
-        pattern="^(?=.*[a-z])(?=.*[A-Z])"
-    /></label>
-    <button class="contacts-button" type="submit">Send</button>
+      <div class="contacts-input-box">
+        <input
+          class="contacts-mail"
+          type="email"
+          required
+          placeholder="Enter email..."
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+        <button class="contacts-button" type="submit">Send</button>
+      </div>
+    </label>
   </form>
 </section>
 
