@@ -220,11 +220,13 @@
       class="h-i-w-gif-img"
       src="../img/how-it-works/fruitgif.gif"
       alt="Fresh fruits"
+      loading="lazy"
     />
   </div>
 </section>
 
-    <section class="fruit-section container" id="fruits">
+    <!-- Fruits (Сергій Мачигін) -->
+<section class="fruit-section container" id="fruits">
   <h2 class="fruits-title">ORGANIC FRUITS</h2>
   <p class="fruit-text-p">
     Our organic fruits are hand-picked from local farms and delivered straight
@@ -440,6 +442,7 @@
         src="/Class_inDesign/assets/img1mob@1x-b8fdb199.webp"
         alt="Banking App"
         width="335"
+        loading="lazy"
       />
     </picture>
 
@@ -460,6 +463,7 @@
         src="/Class_inDesign/assets/img2tab@1x-c632754d.webp"
         alt="Banking App"
         width="344"
+        loading="lazy"
       />
     </picture>
   </div>
@@ -497,17 +501,31 @@
 <footer class="footer-section footer-container footer-main">
   <div class="footer">
     <div class="logosection-links">
+      <picture>
+        <source
+          srcset="
+            ../img/footer-image/imagegirl-with-bananas.webp    1x,
+            ../img/footer-image/imagegirl-with-bananas@2x.webp 2x
+          "
+          media="(min-width:768)"
+        />
 
-       <picture> 
-        <source  srcset="../img/footer-image/imagegirl-with-bananas.webp  1x, 
-        ../img/footer-image/imagegirl-with-bananas@2x.webp    2x" media="(min-width:768)">
-       
-        <source  srcset="../img/footer-image/imagegirl-with-bananas-mob.webp  1x, 
-        ../img/footer-image/imagegirl-with-bananas-mob@2x.webp    2x" media="(max-width:767)">
-       
-        <img class="footer-img"  src="/Class_inDesign/assets/imagegirl-with-bananas-c9817cd4.webp" alt="girl-with-bananas" width="335"  />
-    </picture>
+        <source
+          srcset="
+            ../img/footer-image/imagegirl-with-bananas-mob.webp    1x,
+            ../img/footer-image/imagegirl-with-bananas-mob@2x.webp 2x
+          "
+          media="(max-width:767)"
+        />
 
+        <img
+          class="footer-img"
+          src="/Class_inDesign/assets/imagegirl-with-bananas-c9817cd4.webp"
+          alt="girl-with-bananas"
+          width="335"
+          loading="lazy"
+        />
+      </picture>
 
       <a class="main-logo" href=".index.html">
         <svg class="logo-icon" width="16" height="16">
@@ -539,6 +557,7 @@
           class="social-link"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Facebook ikon"
         >
           <svg class="social-media-icon" width="28" height="28">
             <use href="/Class_inDesign/assets/icons-3065efce.svg#icon-facebook"></use>
@@ -551,6 +570,7 @@
           class="social-link"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Instagram ikon"
         >
           <svg class="social-media-icon" width="28" height="28">
             <use href="/Class_inDesign/assets/icons-3065efce.svg#icon-instagram"></use>
@@ -563,6 +583,7 @@
           class="social-link"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Youtube ikon"
         >
           <svg class="social-media-icon" width="28" height="28">
             <use href="/Class_inDesign/assets/icons-3065efce.svg#icon-youtube"></use>
@@ -595,7 +616,8 @@
 </footer>
 
 
-    <!-- ==================-MODAL WINDOW==============-->
+    <!-- Modal-order (Віталій ViNezh) -->
+<!-- ==================-MODAL WINDOW==============-->
 <!-- =================-CLOSE BUTTON===============-->
 <div class="backdrop-o is-hidden">
   <div class="modal-o">
@@ -935,7 +957,8 @@
   </div>
 </div>
 
-    <!-- Modal window -->
+    <!-- Thank-you  (Ірина Колос)-->
+<!-- Modal window -->
 <div class="background is-hidden" data-modal="2">
   <div class="modal-thank">
     <button class="modal-btn" type="button" js-modal-close>
