@@ -1,9 +1,9 @@
-/* How it work */
+/* How it work (Євген) */
 
-/* .how-it-works {
+.how-it-works {
   padding-top: 40px;
-} */
-
+  padding-bottom: 40px;
+}
 
 @media only screen and (max-width: 374px) {
   .h-i-w-title-box {
@@ -222,8 +222,7 @@
   padding: 12px;
   text-align: center;
 }
-/* .card-img {
-} */
+
 .h-i-w-steps {
   display: block;
   font-weight: 400;
