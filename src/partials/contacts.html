@@ -1,74 +1,63 @@
+<!-- Contacts -->
 <section class="container contacts">
   <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
   <div class="contacts-fruit">
-    <picture class="contacts-picture-one">
+    <picture>
       <source
         media="(min-width: 1280px)"
         srcset="
-          ./img/contacts/img1desk@1x.png 1x,
-          ./img/contacts/img1desk@2x.png 2x
+          ./img/contacts/img1desk@1x.webp 1x,
+          ./img/contacts/img1desk@2x.webp 2x
         "
-        type="image/png"
+        type="image/jpg"
       />
       <source
         media="(min-width: 768px)"
         srcset="
-          ./img/contacts/img1tab@1x.png 1x,
-          ./img/contacts/img1tab@2x.png 2x
+          ./img/contacts/img1tab@1x.webp 1x,
+          ./img/contacts/img1tab@2x.webp 2x
         "
-        type="image/png"
+        type="image/jpg"
       />
       <source
         media="(max-width: 767px)"
         srcset="
-          ./img/contacts/img1mob@1x.png 1x,
-          ./img/contacts/img1mob@2x.png 2x
+          ./img/contacts/img1mob@1x.webp 1x,
+          ./img/contacts/img1mob@2x.webp 2x
         "
-        type="image/png"
+        type="image/jpg"
       />
       <img
         class="img-one"
-        srcset="
-          ./img/contacts/img1mob@1x.png  335w,
-          ./img/contacts/img1tab@1x.png  344w,
-          ./img/contacts/img1desk@1x.png 792w
-        "
-        sizes="(min-width: 1280px) 792px, (min-width: 768px) 344px, (max-width: 767px) 335px, 100vw"
-        src="./img/contacts/img1mob@1x.png"
-        alt="melon"
-        loading="lazy"
-        width="335px"
+        src="./img/contacts/img1mob@1x.webp"
+        alt="Banking App"
+        width="335"
       />
     </picture>
+
     <picture class="contacts-picture-two">
       <source
         media="(min-width: 1280px)"
         srcset="
-          ./img/contacts/img2desk@1x.png 1x,
-          ./img/contacts/img2desk@2x.png 2x
+          ./img/contacts/img2desk@1x.webp 1x,
+          ./img/contacts/img2desk@2x.webp 2x
         "
-        type="image/png"
+        type="image/jpg"
       />
       <source
         media="(min-width: 768px)"
         srcset="
-          ./img/contacts/img2tab@1x.png 1x,
-          ./img/contacts/img2tab@2x.png 2x
+          ./img/contacts/img2tab@1x.webp 1x,
+          ./img/contacts/img2tab@2x.webp 2x
         "
-        type="image/png"
+        type="image/jpg"
       />
 
       <img
         class="img-two"
-        srcset="
-          ./img/contacts/img2tab@1x.png  344w,
-          ./img/contacts/img2desk@1x.png 500w
-        "
-        sizes="(min-width: 1280px) 500px, (min-width: 768px) 344px, 100vw"
-        src="./img/contacts/img2tab@1x.png"
-        alt="blueberry"
-        loading="lazy"
-        width="344px"
+        src="./img/contacts/img2tab@1x.webp"
+        alt="Banking App"
+        width="344"
       />
     </picture>
   </div>
@@ -79,13 +68,17 @@
   </p>
   <form class="contacts-form">
     <label class="contacts-label">
-      <input
-        class="contacts-mail"
-        type="email"
-        required
-        placeholder="Enter email..."
-        pattern="^(?=.*[a-z])(?=.*[A-Z])"
-    /></label>
-    <button class="contacts-button" type="submit">Send</button>
+      <div class="contacts-input-box">
+        <input
+          class="contacts-mail"
+          type="email"
+          name="email"
+          required
+          placeholder="Enter email..."
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+        <button class="contacts-button" type="submit">Send</button>
+      </div>
+    </label>
   </form>
 </section>
