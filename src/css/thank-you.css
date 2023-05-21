@@ -51,18 +51,24 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  .modal {
+  .modal-thank {
     width: calc(100% - 30px);
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .modal {
+  .modal-thank {
     width: 600px;
     min-height: 545px;
     padding: 68px 104px 80px 104px;
   }
 }
+
+/* .modal-thank.active,
+.background.active {
+  opacity: 1;
+  visibility: visible;
+} */
 
 .modal-btn {
   position: absolute;
