@@ -1,47 +1,59 @@
 .fruit-section {
-    /* margin-bottom: 80px; */
-    /* padding-top: 40px;
-    padding-bottom: 40px; */
+  padding-top: 40px;
+  padding-bottom: 93px;
 }
+
+@media only screen and (min-width: 768px) {
+  .fruit-section {
+    padding-top: 72px;
+    padding-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .fruit-section {
+    padding-top: 75px;
+    padding-bottom: 164px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .fruit-section {
     /* margin: 144px 0; */
   }
 }
 @media only screen and (min-width: 1280px) {
-    .fruit-section {
-      /* margin: 150px 0; */
-    }
+  .fruit-section {
+    /* margin: 150px 0; */
   }
+}
 .fruits-title {
-    text-align: center;
+  text-align: center;
 
-    font-weight: 500;
-    font-size: 40px;
-    line-height: 1.1;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
 }
 .fruit-text-p {
-    text-align: center;
-    max-width: 335px;   
-    margin: auto;
-    margin-top: 14px; 
-    margin-bottom: 44px;
+  text-align: center;
+  max-width: 335px;
+  margin: auto;
+  margin-top: 14px;
+  margin-bottom: 44px;
 }
 @media only screen and (min-width: 768px) {
   .fruit-text-p {
-    max-width: 547px; 
+    max-width: 547px;
   }
 }
 
 .fruit-list {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    /* padding: 0 20px; */
-    gap: 24px;
-    margin-bottom: 44px;
-
+  /* padding: 0 20px; */
+  gap: 24px;
+  margin-bottom: 44px;
 }
 @media only screen and (min-width: 768px) {
   .fruit-list {
@@ -51,18 +63,17 @@
     justify-content: center;
 
     gap: 16px;
-
   }
 }
 
 .fruit-card-item {
   position: relative;
-    border-radius: 20px;
+  border-radius: 20px;
 
-    padding: 64px 24px 52px 24px;
-   
-    width: 335px;
-    height: 465px;
+  padding: 64px 24px 52px 24px;
+
+  width: 335px;
+  height: 465px;
 }
 @media only screen and (min-width: 768px) {
   .fruit-card-item {
@@ -72,38 +83,38 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-    .fruit-card-item {
-      max-width: calc((100% - (24px * 2)) / 3);
-      /* max-width: 389px; */
-      /* width: 389px; */
-    }
+  .fruit-card-item {
+    max-width: calc((100% - (24px * 2)) / 3);
+    /* max-width: 389px; */
+    /* width: 389px; */
   }
+}
 .one {
-    background: var(--strawberry-color);
+  background: var(--strawberry-color);
 }
 .two {
-    background: var(--apple-color);
+  background: var(--apple-color);
 }
 .three {
-    background: var(--fruits-color);
+  background: var(--fruits-color);
 }
 .four {
-    background: #BFD663;
+  background: #bfd663;
 }
 .five {
-    background: #E93F29;
+  background: #e93f29;
 }
 .six {
-    background: #DB4F4B;
+  background: #db4f4b;
 }
 .seven {
-    background: #9B5366;
+  background: #9b5366;
 }
 .eight {
-    background: #F47F4C;
+  background: #f47f4c;
 }
 .nine {
-    background: #98B37E;
+  background: #98b37e;
 }
 @media only screen and (max-width: 1279px) {
   .nine {
@@ -126,11 +137,11 @@
 }
 
 .fruit-title-card {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.17;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
 
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 @media only screen and (min-width: 768px) {
   .fruit-title-card {
@@ -139,9 +150,9 @@
   }
 }
 .plant-p {
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: -0.02em;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
 }
 .fruit-img {
   max-width: inherit;
