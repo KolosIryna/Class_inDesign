@@ -2,21 +2,24 @@
   position: relative;
 }
 .container.contacts {
-  margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 @media only screen and (min-width: 768px) {
   .container.contacts {
-    margin-bottom: 144px;
+    padding-top: 72px;
+    padding-bottom: 144px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .container.contacts {
-    margin-bottom: 150px;
+    padding-top: 75px;
+    padding-bottom: 150px;
   }
 }
 .contacts-title {
   position: absolute;
-  top: -53px;
+  top: -14px;
   left: 20px;
   width: 335px;
 
@@ -40,7 +43,7 @@
 
     width: 648px;
     left: 60px;
-    top: -80px;
+    top: -8px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -49,7 +52,7 @@
 
     width: 740px;
     left: 270px;
-    top: -89px;
+    top: -16px;
   }
 }
 .contacts-fruit {
@@ -60,6 +63,11 @@
   .contacts-fruit {
     gap: 16px;
     margin-bottom: 80px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contacts-fruit {
+    gap: 24px;
   }
 }
 .contacts-picture-one {
@@ -117,32 +125,57 @@
 }
 .contacts-label {
 }
-::placeholder {
-  color: var(--text-withe-color);
-  font-size: 14px;
-  line-height: 1.29;
-  opacity: 1;
+.contacts-input-box {
+  display: flex;
+  position: relative;
 }
 .contacts-mail {
   padding-left: 16px;
   width: 292px;
   height: 48px;
-
+  color: var(--text-withe-color);
   opacity: 0.4;
 
   border: 1px solid var(--white-color);
   border-radius: 24px;
   background-color: transparent;
 }
+.contacts-mail::placeholder {
+  color: var(--text-withe-color);
+  font-size: 14px;
+  line-height: 1.29;
+  opacity: 1;
+}
+.contacts-mail:focus {
+  color: var(--text-withe-color);
+  border-color: var(--white-color);
+  outline: 1px solid var(--white-color);
+}
+
+.contacts-mail:invalid:focus {
+  border-color: #ff0000;
+  outline: 1px solid #ff0000;
+}
 
 .contacts-button {
   position: absolute;
   top: 0;
-  left: 0;
+  right: 0px;
   width: 102px;
   height: 48px;
   border-radius: 24px;
   border: none;
   color: var(--text-withe-color);
   background-color: var(--green-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contacts-button:focus {
+  outline: none;
+}
+.contacts-button:hover {
+  outline: none;
+  background-color: var(--white-color);
+  color: var(--green-color);
 }
