@@ -85,6 +85,10 @@
   cursor: pointer;
 }
 
+.modal-close-iconx {
+  stroke: var(--white-color);
+}
+
 .modal-img {
   margin-right: auto;
   margin-left: auto;
