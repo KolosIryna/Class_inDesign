@@ -20,7 +20,7 @@
 
     
     <script type="module" crossorigin src="/Class_inDesign/assets/index-d128f3a4.js"></script>
-    <link rel="stylesheet" href="/Class_inDesign/assets/index-7bb5816f.css">
+    <link rel="stylesheet" href="/Class_inDesign/assets/index-3275c63b.css">
   </head>
 
   <body>
@@ -86,7 +86,8 @@
   </div>
 </header>
 
-    <!-- Hero (Іванна) -->
+    <main>
+      <!-- Hero (Іванна) -->
 <section class="section hero-section">
   <div class="container">
     <h1 class="hero-title">
@@ -166,7 +167,7 @@
   </div>
 </section>
 
-    <!-- how it works (Євген) -->
+      <!-- how it works (Євген) -->
 
 <section class="section how-it-works" id="how-it-works">
   <div class="h-i-w-title-box">
@@ -224,7 +225,7 @@
   </div>
 </section>
 
-    <!-- Fruits (Сергій Мачигін) -->
+      <!-- Fruits (Сергій Мачигін) -->
 <section class="fruit-section container" id="fruits">
   <h2 class="fruits-title">ORGANIC FRUITS</h2>
   <p class="fruit-text-p">
@@ -408,7 +409,7 @@
       </div>
     </li>
   </ul>
-  <button class="order-btn button" type="button">
+  <button class="order-btn button js-open-modal" type="button" data-modal="1">
     ORDER
     <svg class="fruit-btn-icon" width="14" height="14">
       <use href="/Class_inDesign/assets/icons-3065efce.svg#icon-vector"></use>
@@ -416,7 +417,7 @@
   </button>
 </section>
 
-    <!-- Contacts (Іван Бігун)-->
+      <!-- Contacts (Іван Бігун)-->
 <section class="container contacts" id="contacts">
   <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
   <div class="contacts-fruit">
@@ -496,6 +497,7 @@
   </form>
 </section>
 
+    </main>
     <!-- Footer- Ірина Баландіна -->
 <footer class="footer-section footer-container footer-main">
   <div class="footer">
@@ -618,15 +620,15 @@
     <!-- Modal-order (Віталій ViNezh) -->
 <!-- ==================-MODAL WINDOW==============-->
 <!-- =================-CLOSE BUTTON===============-->
-<div class="backdrop-o is-hidden" data-modal="modal-1">
-  <div class="modal-o">
+<div class="backdrop-o is-hidden">
+  <div class="modal-o active" data-modal="1">
     <button
       type="button"
-      class="modal-close js-modal-close"
+      class="modal-close"
       id="closeButtons"
       aria-label="Close"
     >
-      <svg class="modal-close-icon">
+      <svg class="modal-close-icon js-modal-close">
         <use href="../img/icons.svg#icon-icon-close"></use>
       </svg>
     </button>
@@ -958,9 +960,9 @@
 
     <!-- Thank-you  (Ірина Колос)-->
 <!-- Modal window -->
-<div class="background is-hidden" data-modal="2">
-  <div class="modal-thank">
-    <button class="modal-btn" type="button" js-modal-close>
+<div class="background is-hidden js-overlay-modal active">
+  <div class="modal-thank active" data-modal="2">
+    <button class="modal-btn" type="button">
       <svg class="modal-close-iconx js-modal-close" width="12" height="12">
         <use href="/Class_inDesign/assets/icons-3065efce.svg#icon-close"></use>
       </svg>
