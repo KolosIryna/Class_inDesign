@@ -1,14 +1,8 @@
-<!-- Modal-order (Віталій ViNezh) -->
 <!-- ==================-MODAL WINDOW==============-->
 <!-- =================-CLOSE BUTTON===============-->
-<div class="backdrop-o is-hidden">
-  <div class="modal-o active" data-modal="1">
-    <button
-      type="button"
-      class="modal-close"
-      id="closeButtons"
-      aria-label="Close"
-    >
+<div class="js-overlay-modal backdrop-o">
+  <div class="modal modal-o" data-modal="1">
+    <button type="button" class="modal-close" aria-label="Close">
       <svg class="modal-close-icon js-modal-close">
         <use href="../img/icons.svg#icon-icon-close"></use>
       </svg>
@@ -49,16 +43,16 @@
             <source
               media="(min-width: 1280px)"
               srcset="
-                ./img/modal-order/desktop/strawberrys_desk@1x-173.png 1x,
-                ./img/modal-order/desktop/strawberrys_desk@2x-346.png 2x
+                ../img/modal-order/desktop/strawberrys_desk@1x-173.png 1x,
+                ../img/modal-order/desktop/strawberrys_desk@2x-346.png 2x
               "
               type="image/png"
             />
             <source
               media="(min-width: 1280px)"
               srcset="
-                ./img/modal-order/desktop/strawberrys_desk@1x-173.webp 1x,
-                ./img/modal-order/desktop/strawberrys_desk@2x-346.webp 2x
+                ../img/modal-order/desktop/strawberrys_desk@1x-173.webp 1x,
+                ../img/modal-order/desktop/strawberrys_desk@2x-346.webp 2x
               "
               type="image/webp"
             />
@@ -66,16 +60,16 @@
             <source
               media="(min-width: 768px )"
               srcset="
-                ./img/modal-order/tablet/strawberrys_tab@1x-133.webp 1x,
-                ./img/modal-order/tablet/strawberrys_tab@2x-266.webp 2x
+                ../img/modal-order/tablet/strawberrys_tab@1x-133.webp 1x,
+                ../img/modal-order/tablet/strawberrys_tab@2x-266.webp 2x
               "
               type="image/webp"
             />
             <source
               media="(min-width:768px )"
               srcset="
-                ./img/modal-order/tablet/strawberrys_tab@1x.png 1x,
-                ./img/modal-order/tablet/strawberrys_tab@2x.png 2x
+                ../img/modal-order/tablet/strawberrys_tab@1x.png 1x,
+                ../img/modal-order/tablet/strawberrys_tab@2x.png 2x
               "
               type="image/png"
             />
@@ -83,21 +77,21 @@
             <source
               media="(min-width: 375px)"
               srcset="
-                ./img/modal-order/mobile/strawberrys@1x-88.webp  1x,
-                ./img/modal-order/mobile/strawberrys@2x-176.webp 2x
+                ../img/modal-order/mobile/strawberrys@1x-88.webp  1x,
+                ../img/modal-order/mobile/strawberrys@2x-176.webp 2x
               "
               type="image/webp"
             />
             <source
               media="(min-width: 375px)"
               srcset="
-                ./img/modal-order/mobile/strawberrys@1x.png 1x,
-                ./img/modal-order/mobile/strawberrys@2x.png 2x
+                ../img/modal-order/mobile/strawberrys@1x.png 1x,
+                ../img/modal-order/mobile/strawberrys@2x.png 2x
               "
               type="image/webp"
             />
             <img
-              src="./img/modal-order/mobile/strawberrys@1x.png"
+              src="../img/modal-order/mobile/strawberrys@1x.png"
               alt="Basket of strawberrys"
               class="product-img"
               loading="lazy"
@@ -327,12 +321,7 @@
         </label>
       </label>
       <!--============BUTTON SUBMIT===========-->
-      <button
-        type="submit"
-        class="submit-btn js-modal-close"
-        id="closeButtons"
-        aria-label="Button submit"
-      >
+      <button type="submit" class="submit-btn" aria-label="Button submit">
         Submit
       </button>
     </form>

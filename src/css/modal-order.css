@@ -3,7 +3,7 @@
   |     Modal window 1
   |============================
 */
-.backdrop-o {
+.backdrop-o.active {
   position: fixed;
   left: 0;
   top: 0;
@@ -12,7 +12,7 @@
   width: 100%;
   height: 100%;
 
-  z-index: var(--modal-z);
+  z-index: 9999;
 
   background-color: rgba(46, 47, 66, 0.6);
 
@@ -24,7 +24,9 @@
     visibility var(--duration-timing-func);
 }
 
-.backdrop-o.is-hidden {
+.backdrop-o {
+  transition: opacity var(--duration-timing-func),
+    visibility var(--duration-timing-func);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -32,11 +34,21 @@
 }
 
 .modal-o {
+  transform: translate(-50%, -50%) rotate(0deg) scale(0.01);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform var(--duration-timing-func) 250ms,
+    opacity var(--duration-timing-func) 250ms;
+}
+
+
+.modal-o.active {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(0) scale(1);
+  transform: translate(-50%, -50%) rotate(360deg) scale(1);
   opacity: 1;
+  visibility: visible;
 
   padding: 20px;
 
@@ -53,25 +65,14 @@
 }
 
 @media only screen and (max-width: 374px) {
-  .modal-o {
+  .modal-o.active {
     width: calc(100% - 40px);
   }
 }
 
-.backdrop-o.is-hidden .modal {
-  transform: translate(-50%, -50%) rotate(360deg) scale(0.01);
-  opacity: 0;
-}
-
-/* @media screen and (max-width: maxwidth: 767px) and (orientation: landscape) {
-  .modal-o {
-    top: 65%;
-    overflow: auto;
-  }
-} */
 /* -----------------TABLET MODAL WINDOW---------- */
 @media only screen and (min-width: 768px) {
-  .modal-o {
+  .modal-o.active {
     width: 704px;
     min-height: 756px;
     padding: 40px;
@@ -79,9 +80,22 @@
     background-size: auto 417px;
     background-position: bottom right;
     background-image: url(../img/modal-order/tablet/banana_girl_tab@1x.jpg);
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+  }
+}
+
+/* ----------RETINA TABLET WINDOW---------------- */
+@media only screen and (min-width: 768px) {
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .modal-o.active {
+      width: 704px;
+      min-height: 756px;
+      padding: 40px;
+      background-repeat: no-repeat;
+      background-size: auto 417px;
+      background-position: bottom right;
       background-image: url(../img/modal-order/tablet/banana_girl_tab@2x.jpg);
     }
   }
@@ -89,21 +103,33 @@
 
 /* --------------DESKTOP WINDOW------------------ */
 @media only screen and (min-width: 1280px) {
-  .modal-o {
+  .modal-o.active {
     width: 891px;
     min-height: 860px;
 
     background-size: auto 459px;
     background-position: bottom right;
     background-image: url(../img/modal-order/desktop/banana_girl_desk@1x.jpg);
+  }
+}
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+/* -----------RETINA DESCTOP WINDOW--------- */
+@media only screen and (min-width: 1280px) {
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .modal-o.active {
+      width: 891px;
+      min-height: 860px;
+
+      background-size: auto 459px;
+      background-position: bottom right;
       background-image: url(../img/modal-order/desktop/banana_girl_desk@2x.jpg);
     }
   }
 }
+
 /* ------------------MODAL BUTTON------------------- */
 .modal-close {
   position: absolute;
@@ -150,6 +176,7 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   color: var(--red-color);
 }
+
 /* --------TABLET WINDOW---------------- */
 @media only screen and (min-width: 768px) {
   .form-title {
@@ -157,6 +184,7 @@
     line-height: 1.1;
   }
 }
+
 /* -----------------LIST OF FRUITS----------- */
 .fruits-box {
   display: block;
@@ -183,12 +211,14 @@
   background-color: var(--fruits-color);
   margin-bottom: 0px;
 }
+
 /* ---------TABLET WINDOW----------- */
 @media only screen and (min-width: 768px) {
   .fruits-box {
     display: flex;
     gap: 12px;
   }
+
   .item-box {
     display: block;
     margin-bottom: 0;
@@ -201,6 +231,7 @@
   margin-top: 20px;
   margin-left: 20px;
 }
+
 /* ---------TABLET WINDOW----------- */
 @media only screen and (min-width: 768px) {
   .modal-text-box {
@@ -235,6 +266,7 @@
   margin-right: 32px;
   margin-bottom: 8px;
 }
+
 /* ---------TABLET WINDOW----------- */
 @media only screen and (min-width: 768px) {
   .product-img {
@@ -251,6 +283,7 @@
 
 .product-check {
   appearance: none;
+
 }
 
 .check-icon-unchecked {
@@ -263,11 +296,11 @@
   transition: opacity var(--duration-timing-func);
 }
 
-.product-check:checked + .check-icon > .check-icon-unchecked {
+.product-check:checked+.check-icon>.check-icon-unchecked {
   opacity: 0;
 }
 
-.product-check:checked + .check-icon > .check-icon-checked {
+.product-check:checked+.check-icon>.check-icon-checked {
   opacity: 1;
 }
 
@@ -278,6 +311,7 @@
   overflow: auto;
   padding: 2px;
 }
+
 .form-label {
   display: block;
 
@@ -314,6 +348,7 @@
   border: none;
   width: calc(100%-2%);
 }
+
 .form-input::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
@@ -381,6 +416,7 @@
 .submit-btn:focus {
   background-color: var(--red-color);
 }
+
 /* ----------TABLET WINDOW--------------- */
 @media only screen and (min-width: 768px) {
   .submit-btn {
