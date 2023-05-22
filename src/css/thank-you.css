@@ -24,12 +24,12 @@
     visibility var(--duration-timing-func);
 }
 
-.background.is-hidden {
+/* .background.is-hidden {
   opacity: 0;
   visibility: hidden;
 
   pointer-events: none;
-}
+} */
 
 .modal-thank {
   position: absolute;
@@ -64,11 +64,11 @@
   }
 }
 
-/* .modal-thank.active,
+.modal-thank.active,
 .background.active {
   opacity: 1;
   visibility: visible;
-} */
+}
 
 .modal-btn {
   position: absolute;
@@ -79,13 +79,12 @@
   justify-content: center;
   align-items: center;
 
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
 
   color: var(--white-color);
   background-color: transparent;
   border: none;
-  border-radius: 50%;
   outline: none;
 
   cursor: pointer;
