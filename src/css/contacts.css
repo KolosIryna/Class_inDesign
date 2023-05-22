@@ -202,3 +202,28 @@
   background-color: var(--white-color);
   color: var(--green-color);
 }
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--green-color);
+  fill: var(--white-color);
+  border-radius: 50%;
+  border: none;
+}
+@media only screen and (min-width: 768px) {
+  .scroll-button {
+    bottom: 32px;
+    right: 32px;
+    width: 50px;
+    height: 50px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .scroll-button {
+    width: 60px;
+    height: 60px;
+  }
+}
