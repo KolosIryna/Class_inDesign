@@ -38,7 +38,7 @@
 }
 
 .link-list {
-  margin-top: 14px;
+
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -87,6 +87,15 @@
     justify-content: center;
     text-align: center;
   }
+
+  .footer-img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+  }
+  
+  
+
 }
 
 .contact-link-mobile {
@@ -104,13 +113,10 @@
   height: 54px;
   margin-left: auto;
   margin-right: auto;
+
 }
 
-.footer-img {
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 20px;
-}
+
 
 .main-logo {
   display: flex;
@@ -129,7 +135,9 @@
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
   .footer {
     width: 582px;
     flex-wrap: wrap;
@@ -137,32 +145,49 @@
 }
 
 @media screen and (min-width: 768px) {
-  .footer-main {
+
+ 
+  .footer{
+  
+    margin-left:0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
   }
-  .logosection-links {
-    margin-bottom: 0;
+  .footer-img {
+
+    margin-bottom: 20px;
   }
 
-  .footer-section {
+.navigation{
+  margin-left: 70px;
+}
+
+.footer-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .logosection-links {
-    margin-bottom: 0;
+  .navigation{
+    margin-left: 70px;
   }
+
 
   .main-logo {
     margin-bottom: 80px;
+  
   }
-  .contact-item {
-    margin-bottom: 14px;
+
+  .logosection-links {
+  
+    display: block;
+    margin-left:0;
   }
+
+
   .contact-link-mobile {
     font-size: 18px;
+    display: block;
+    width: 184px;
+    margin-bottom: 20px;
   }
 
   .address-text {
@@ -170,12 +195,14 @@
     max-width: 180px;
     height: 72px;
     display: block;
-    max-width: 180px;
+
     text-align: left;
   }
 }
 
 @media screen and (min-width: 1280px) {
+
+
   .footer-container {
     display: flex;
   }
@@ -188,6 +215,7 @@
 }
 
 @media screen and (min-width: 1280px) {
+
   .footer-section {
     display: flex;
   }
@@ -216,4 +244,6 @@
     height: 72px;
     text-align: left;
   }
+
 }
+
