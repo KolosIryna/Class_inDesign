@@ -1,36 +1,44 @@
 /* Footer */
 
 .footer-section {
-  background-color: var(--white-color);
-  padding-top: 80px;
-  padding-bottom: 80px;
+
+    background-color: var(--white-color);
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+ 
+
 }
 
 @media screen and (min-width: 375px) {
-  .footer-container {
-    width: 375px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-container {
-    width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .footer-container {
-    width: 1280px;
-  }
-}
 
+    .footer-container {
+      width: 375px;
+      margin: 0 auto;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .footer-container {
+      width: 768px;
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+  @media screen and (min-width: 1280px) {
+    .footer-container {
+      width: 1280px;
+    
+    }
+  }
+  
 /* Mobile phone */
 
-.footer {
-  margin-bottom: 44px;
+
+
+.footer{
+     margin-bottom: 44px;
 }
 
 .logosection-links {
@@ -77,10 +85,13 @@
 }
 
 .social-link {
-  display: inline-block;
-  width: 46px;
-  height: 46px;
+
+    display: inline-block;
+  width: 44px;
+  height: 44px;
+
   padding: 8px;
+  gap: 8px;
   border: 1px solid var(--red-color);
   border-radius: 10px;
   transition-property: background-color;
@@ -89,18 +100,23 @@
 }
 
 .social-media-icon {
-  fill: var(--red-color);
+
+fill: var(--red-color);
 
   border-radius: 10px;
   background-color: var(--white-color);
 }
 
-.social-link:hover {
-  background-color: rgba(174, 19, 50, 0.1);
+
+.social-link:hover{
+    background-color:rgba(174, 19, 50, 0.1); 
 }
 
-@media screen and (max-width: 767px) {
-  .contact-item {
+
+@media screen and (max-width: 767px)   {
+    
+.contact-item{
+
     display: flex;
     justify-content: center;
     text-align: center;
