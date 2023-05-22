@@ -188,10 +188,12 @@
     line-height: 1.33;
   }
 }
+
 .fruit-btn-icon {
   transform: rotate(14deg);
   fill: var(--white-color);
 }
+
 .price-box {
   display: flex;
   justify-content: center;
