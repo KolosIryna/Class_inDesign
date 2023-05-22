@@ -64,11 +64,11 @@
   }
 }
 
-.modal-thank.active,
+/* .modal-thank.active,
 .background.active {
   opacity: 1;
   visibility: visible;
-}
+} */
 
 .modal-btn {
   position: absolute;
