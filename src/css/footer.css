@@ -1,24 +1,16 @@
 /* Footer */
 
 .footer-section {
-
-    
-    background-color: var(--white-color);
-    padding-top: 80px;
-    padding-bottom: 80px;
-    width:100%;
+  background-color: var(--white-color);
+  padding-top: 80px;
+  padding-bottom: 80px;
+  width: 100%;
 }
-
-
-
-
 
 /* Mobile phone */
 
-
-
-.footer{
-     margin-bottom: 44px;
+.footer {
+  margin-bottom: 44px;
 }
 
 .logosection-links {
@@ -65,8 +57,7 @@
 }
 
 .social-link {
-
-    display: inline-block;
+  display: inline-block;
   width: 44px;
   height: 44px;
 
@@ -80,23 +71,18 @@
 }
 
 .social-media-icon {
-
-fill: var(--red-color);
+  fill: var(--red-color);
 
   border-radius: 10px;
   background-color: var(--white-color);
 }
 
-
-.social-link:hover{
-    background-color:rgba(174, 19, 50, 0.1); 
+.social-link:hover {
+  background-color: rgba(174, 19, 50, 0.1);
 }
 
-
-@media screen and (max-width: 767px)   {
-    
-.contact-item{
-
+@media screen and (max-width: 767px) {
+  .contact-item {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -144,13 +130,9 @@ fill: var(--red-color);
 }
 
 @media screen and (min-width: 768px) and (max-width: 1157px) {
-
-    .footer{
-      width: 582px;
-      flex-wrap: wrap;
-    }
-    
-
+  .footer {
+    width: 582px;
+    flex-wrap: wrap;
   }
 }
 
@@ -164,21 +146,16 @@ fill: var(--red-color);
     margin-bottom: 0;
   }
 
+  .footer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logosection-links {
+    margin-bottom: 0;
+  }
 
-
-    .footer-section {
-      display:flex;
-      justify-content: space-between;
-      align-items: center;
-   
-    }
-    .logosection-links{
-        margin-bottom:0;
-    }
-
-
-    .main-logo {
-
+  .main-logo {
     margin-bottom: 80px;
   }
   .contact-item {
@@ -208,25 +185,20 @@ fill: var(--red-color);
     display: flex;
     margin-right: 232px;
   }
+}
 
+@media screen and (min-width: 1280px) {
+  .footer-section {
+    display: flex;
+  }
 
-  
-  @media screen and (min-width: 1280px) {
+  .footer {
+    align-items: flex-start;
+    display: flex;
+    margin-right: 232px;
+  }
 
-    .footer-section{
-        display: flex;
-       
-    }
-   
-    
-    .footer {
-      align-items: flex-start;
-      display: flex;
-      margin-right: 232px;
-    }
-    
-.main-logo{
-
+  .main-logo {
     margin-bottom: 0;
   }
   .link-list {
