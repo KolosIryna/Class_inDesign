@@ -77,14 +77,14 @@
 }
 @media only screen and (min-width: 768px) {
   .fruit-card-item {
-    max-width: calc((100% - (24px * 1)) / 2);
+    width: calc((100% - (24px * 1)) / 2);
     /* max-width: 344px; */
     /* width: 344px; */
   }
 }
 @media only screen and (min-width: 1280px) {
   .fruit-card-item {
-    max-width: calc((100% - (24px * 2)) / 3);
+    width: calc((100% - (24px * 2)) / 3);
     /* max-width: 389px; */
     /* width: 389px; */
   }
