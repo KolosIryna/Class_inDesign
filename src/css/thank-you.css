@@ -15,30 +15,18 @@
 
   z-index: 9999;
 
-  background: rgba(46, 47, 66, 0.4);
+  background-color: rgba(46, 47, 66, 0.4);
 
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity var(--duration-timing-func),
+    visibility var(--duration-timing-func);
+}
+
+.modal-active {
   opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
-
-  transition: opacity var(--duration-timing-func),
-    visibility var(--duration-timing-func);
-}
-
-.overlay.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-
-  pointer-events: none;
-}
-
-.overlay {
-  transition: opacity var(--duration-timing-func),
-    visibility var(--duration-timing-func);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition-delay: 250ms;
+  pointer-events: all;
 }
 
 .modal-thank {
@@ -87,12 +75,6 @@
   }
 }
 
-.modal-thank.active,
-.overlay.active {
-  opacity: 1;
-  visibility: visible;
-}
-
 .modal-btn {
   position: absolute;
   right: 20px;
@@ -101,10 +83,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 28px;
-  height: 28px;
-
+  /* width: 28px;
+  height: 28px; */
   color: var(--white-color);
   background-color: transparent;
   border: none;
