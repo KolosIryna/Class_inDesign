@@ -263,6 +263,10 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   color: var(--text-red-color);
 }
+.btn-link-text:hover,
+.btn-link-text:focus {
+  color: var(--green-color);
+}
 
 @media only screen and (min-width: 768px) {
   .btn-link {
@@ -288,6 +292,7 @@
     |============================
   */
 .hero-right {
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -304,7 +309,7 @@
 @media only screen and (min-width: 1280px) {
   .hero-right {
     width: auto;
-    margin-top: auto;
+    /* margin-top: auto; */
   }
 }
 
@@ -333,6 +338,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 8px;
+}
+@media only screen and (min-width: 1280px) {
+  .list-btn {
+    position: absolute;
+    bottom: -88px;
+    right: -18px;
+  }
 }
 
 .hero-link-item {
@@ -386,6 +398,6 @@
 }
 @media only screen and (min-width: 1280px) {
   .list-btn {
-    width: 267px;
+    width: 268px;
   }
 }
