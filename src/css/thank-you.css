@@ -3,7 +3,8 @@
   |     Modal window 2
   |============================
 */
-.background.active {
+
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -14,30 +15,18 @@
 
   z-index: 9999;
 
-  background: rgba(46, 47, 66, 0.4);
+  background-color: rgba(46, 47, 66, 0.4);
 
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
+  opacity: 0;
+  pointer-events: none;
 
   transition: opacity var(--duration-timing-func),
     visibility var(--duration-timing-func);
 }
 
-/* .background.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-
-  pointer-events: none;
-} */
-
-.background {
-  transition: opacity var(--duration-timing-func),
-    visibility var(--duration-timing-func);
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition-delay: 250ms;
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
 }
 
 .modal-thank {
@@ -48,7 +37,7 @@
     opacity var(--duration-timing-func) 250ms;
 }
 
-.modal-thank.active {
+.modal-thank {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -56,7 +45,8 @@
   opacity: 1;
   visibility: visible;
 
-  padding: 40px 20px;
+  padding-top: 68px;
+  padding-bottom: 80px;
 
   width: 335px;
   min-height: 426px;
@@ -72,13 +62,13 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  .modal-thank.active {
+  .modal-thank {
     width: calc(100% - 30px);
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .modal-thank.active {
+  .modal-thank {
     width: 600px;
     min-height: 545px;
     padding: 68px 104px 80px 104px;
@@ -93,10 +83,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 28px;
-  height: 28px;
-
+  /* width: 28px;
+  height: 28px; */
   color: var(--white-color);
   background-color: transparent;
   border: none;

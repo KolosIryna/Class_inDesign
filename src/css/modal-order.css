@@ -84,10 +84,9 @@
 
 /* ----------RETINA TABLET WINDOW---------------- */
 @media only screen and (min-width: 768px) {
-
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .modal-o.active {
       width: 704px;
       min-height: 756px;
@@ -114,10 +113,9 @@
 
 /* -----------RETINA DESCTOP WINDOW--------- */
 @media only screen and (min-width: 1280px) {
-
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .modal-o.active {
       width: 891px;
       min-height: 860px;
@@ -304,11 +302,11 @@
   transition: opacity var(--duration-timing-func);
 }
 
-.product-check:checked+.check-icon>.check-icon-unchecked {
+.product-check:checked + .check-icon > .check-icon-unchecked {
   opacity: 0;
 }
 
-.product-check:checked+.check-icon>.check-icon-checked {
+.product-check:checked + .check-icon > .check-icon-checked {
   opacity: 1;
 }
 
