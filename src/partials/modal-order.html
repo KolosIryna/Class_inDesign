@@ -1,0 +1,326 @@
+<!-- ==================-MODAL WINDOW==============-->
+<!-- =================-CLOSE BUTTON===============-->
+<div class="js-overlay-modal backdrop-o">
+  <div class="modal-o modal active" data-modal="1">
+    <button type="button" class="modal-close js-modal-close" aria-label="Close">
+      <svg class="modal-close-icon">
+        <use href="./img/icons.svg#icon-icon-close"></use>
+      </svg>
+    </button>
+    <!-- ==================TEXT MODAL WINDOW=============== -->
+    <h2 class="form-title">Your Order</h2>
+
+    <form class="modal-form" autocomplete="off">
+      <!-- =======================LIST OF FRUITS========================== -->
+      <div class="fruits-box">
+        <!-- =================CARD STRAWBERRYS BASKET============== -->
+        <label class="item-box">
+          <input
+            type="checkbox"
+            name="products"
+            value="strawberrys"
+            class="product-check"
+            checked
+          />
+          <svg class="check-icon agreement" width="16" height="16">
+            <use
+              href="./img/icons.svg#icon-checked"
+              class="check-icon-checked"
+            ></use>
+            <use
+              href="./img/icons.svg#icon-unchecked"
+              class="check-icon-unchecked"
+            ></use>
+          </svg>
+
+          <a class="modal-text-box">
+            <span class="modal-list-title">Strawberry Basket</span>
+            <span class="modal-list-text">Plant</span>
+          </a>
+          <picture>
+            <!-- DESKTOP -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/desktop/strawberrys_desk@1x-173.png 1x,
+                ./img/modal-order/desktop/strawberrys_desk@2x-346.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/desktop/strawberrys_desk@1x-173.webp 1x,
+                ./img/modal-order/desktop/strawberrys_desk@2x-346.webp 2x
+              "
+              type="image/webp"
+            />
+            <!-- TABLET -->
+            <source
+              media="(min-width: 768px )"
+              srcset="
+                ./img/modal-order/tablet/strawberrys_tab@1x-133.webp 1x,
+                ./img/modal-order/tablet/strawberrys_tab@2x-266.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:768px )"
+              srcset="
+                ./img/modal-order/tablet/strawberrys_tab@1x.png 1x,
+                ./img/modal-order/tablet/strawberrys_tab@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- MOBILE -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ./img/modal-order/mobile/strawberrys@1x-88.webp  1x,
+                ./img/modal-order/mobile/strawberrys@2x-176.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ./img/modal-order/mobile/strawberrys@1x.png 1x,
+                ./img/modal-order/mobile/strawberrys@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="./img/modal-order/mobile/strawberrys@1x.png"
+              alt="Basket of strawberrys"
+              class="product-img"
+              loading="lazy"
+            />
+          </picture>
+        </label>
+        <!-- =================CARD APPLES BASKET============== -->
+        <label class="item-box">
+          <input
+            type="checkbox"
+            name="products"
+            value="apples"
+            class="product-check"
+          />
+          <svg class="check-icon agreement" width="16" height="16">
+            <use
+              href="./img/icons.svg#icon-checked"
+              class="check-icon-checked"
+            ></use>
+            <use
+              href="./img/icons.svg#icon-unchecked"
+              class="check-icon-unchecked"
+            ></use>
+          </svg>
+          <a class="modal-text-box">
+            <span class="modal-list-title">Apple Basket</span>
+            <span class="modal-list-text">Plant</span>
+          </a>
+          <picture>
+            <!-- DESKTOP -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/desktop/apples_desk@1x-229.webp 1x,
+                ./img/modal-order/desktop/apples_desk@2x-458.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/desktop/apples_desk@1x-229.png 1x,
+                ./img/modal-order/desktop/apples_desk@2x-458.png 2x
+              "
+              type="image/png"
+            />
+            <!-- TABLET -->
+            <source
+              media="(min-width: 768px )"
+              srcset="
+                ./img/modal-order/tablet/apples_tab@1x-172.webp 1x,
+                ./img/modal-order/tablet/apples_tab@2x-344.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:768px )"
+              srcset="
+                ./img/modal-order/tablet/apples_tab@1x.png 1x,
+                ./img/modal-order/tablet/apples_tab@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- MOBILE -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ./img/modal-order/mobile/apples@1x-106.webp 1x,
+                ./img/modal-order/mobile/apples@2x-212.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ./img/modal-order/mobile/apples@1x.png 1x,
+                ./img/modal-order/mobile/apples@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <img
+              src="./img/modal-order/mobile/apples@1x.png"
+              alt="Basket of apples"
+              class="product-img"
+              loading="lazy"
+            />
+          </picture>
+        </label>
+        <!-- =================CARD FRUITS BASKET============== -->
+        <label class="item-box">
+          <input
+            type="checkbox"
+            name="products"
+            value="fruits"
+            class="product-check"
+          />
+          <svg class="check-icon agreement" width="16" height="16">
+            <use
+              href="./img/icons.svg#icon-checked"
+              class="check-icon-checked"
+            ></use>
+            <use
+              href="./img/icons.svg#icon-unchecked"
+              class="check-icon-unchecked"
+            ></use>
+          </svg>
+          <a class="modal-text-box">
+            <span class="modal-list-title">Fruits Basket</span>
+            <span class="modal-list-text">Plant</span>
+          </a>
+          <picture>
+            <!-- DESKTOP -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/desktop/fruits_desk@1x-229.webp 1x,
+                ./img/modal-order/desktop/fruits_desk@2x-458.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/desktop/fruits_desk@1x-229.png 1x,
+                ./img/modal-order/desktop/fruits_desk@2x-458.png 2x
+              "
+              type="image/png"
+            />
+            <!-- TABLET -->
+            <source
+              media="(min-width: 768px )"
+              srcset="
+                ./img/modal-order/tablet/fruits_tab@1x-172.webp 1x,
+                ./img/modal-order/tablet/fruits_tab@2x-344.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width:768px )"
+              srcset="
+                ./img/modal-order/tablet/fruits_tab@1x.png 1x,
+                ./img/modal-order/tablet/fruits_tab@2x.png 2x
+              "
+              type="image/png"
+            />
+            <!-- MOBILE -->
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ./img/modal-order/mobile/fruits@1x-107.webp 1x,
+                ./img/modal-order/mobile/fruits@2x-214.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 375px)"
+              srcset="
+                ./img/modal-order/mobile/fruits@1x.png 1x,
+                ./img/modal-order/mobile/fruits@2x.png 2x
+              "
+              type="image/webp"
+            />
+            <img
+              src="./img/modal-order/mobile/fruits@1x.png"
+              alt="Basket of fruits"
+              class="product-img"
+              loading="lazy"
+            />
+          </picture>
+        </label>
+      </div>
+      <!--=======================INPUT FIELDS==============================-->
+      <div class="input-fields">
+        <!-- ======USER NAME======== -->
+        <label class="form-label">
+          <input
+            type="text"
+            name="user-name"
+            id="user_name"
+            placeholder="Enter full name.."
+            required
+            pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
+            minlength="2"
+            class="form-input"
+          />
+        </label>
+        <!-- ========USER EMAIL======== -->
+        <label class="form-label">
+          <input
+            type="email"
+            name="user-email"
+            id="user_email"
+            placeholder="Enter email.."
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            required
+            class="form-input"
+          />
+        </label>
+        <!-- ===========USER CARD============= -->
+        <label class="form-label">
+          <input
+            type="tel"
+            name="user-card"
+            id="user_card"
+            placeholder="Enter card.."
+            required
+            pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
+            title="xxxx-xxxx-xxxx-xxxx"
+            class="form-input"
+          />
+        </label>
+        <!-- ========COMMENTS============ -->
+        <label class="form-label">
+          <textarea
+            name="comment"
+            id="user_comment"
+            placeholder="Enter comments.."
+            class="text-area"
+          ></textarea>
+        </label>
+      </div>
+      <!--============BUTTON SUBMIT===========-->
+      <button
+        type="submit"
+        class="submit-btn js-modal-close"
+        aria-label="Button submit"
+        data-modal="1"
+      >
+        Submit
+      </button>
+    </form>
+  </div>
+</div>

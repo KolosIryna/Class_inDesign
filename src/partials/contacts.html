@@ -1,0 +1,93 @@
+<!-- Contacts (Іван Бігун)-->
+<section class="container contacts" id="contacts">
+  <h2 class="contacts-title">Fresh Harvest Box has got you covered</h2>
+  <div class="contacts-fruit">
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/contacts/img1desk@1x.webp 1x,
+          ./img/contacts/img1desk@2x.webp 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/contacts/img1tab@1x.webp 1x,
+          ./img/contacts/img1tab@2x.webp 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./img/contacts/img1mob@1x.webp 1x,
+          ./img/contacts/img1mob@2x.webp 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        class="img-one"
+        src="./img/contacts/img1mob@1x.webp"
+        alt="Banking App"
+        width="335"
+        loading="lazy"
+      />
+    </picture>
+
+    <picture class="contacts-picture-two">
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./img/contacts/img2desk@1x.webp 1x,
+          ./img/contacts/img2desk@2x.webp 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/contacts/img2tab@1x.webp 1x,
+          ./img/contacts/img2tab@2x.webp 2x
+        "
+        type="image/jpg"
+      />
+
+      <img
+        class="img-two"
+        src="./img/contacts/img2tab@1x.webp"
+        alt="Banking App"
+        width="344"
+        loading="lazy"
+      />
+    </picture>
+  </div>
+  <p class="contacts-text">
+    Our boxes are packed with delicious, nutritious fruits and vegetables,
+    perfect for anyone looking to eat healthier or support local farmers. Order
+    your box today and start enjoying the best that nature has to offer!
+  </p>
+  <form class="contacts-form modal-form">
+    <div class="contacts-input-box">
+      <label class="contacts-label">
+        <input
+          class="contacts-mail modal-field-input"
+          type="email"
+          name="email"
+          required
+          placeholder="Enter email..."
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+        />
+
+        <button
+          class="contacts-button button open-modal-btn"
+          type="submit"
+          data-modal="2"
+        >
+          Send
+        </button>
+      </label>
+    </div>
+  </form>
+</section>
