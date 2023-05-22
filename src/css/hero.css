@@ -30,7 +30,7 @@
 
   background-image: url(../img/images-hero/banana_mobile@1x.png),
     url(../img/images-hero/strawberry_mobile@1x.png);
-  background-position: 10px 55px, 100% 0;
+  background-position: 10px 55px, 100% 4px;
 
   background-repeat: no-repeat;
 }
@@ -39,7 +39,7 @@
   .hero-section .container {
     background-image: url(../img/images-hero/banana_tab@1x.png),
       url(../img/images-hero/strawberry_tab@1x.png);
-    background-position: 12px 86px, 98% -26px;
+    background-position: 12px 86px, 98% -16px;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,7 +57,7 @@
     padding: 0 62px;
     background-image: url(../img/images-hero/banana_@1x.png),
       url(../img/images-hero/strawberry_@1x.png);
-    background-position: 19% 126px, 85% -26px;
+    background-position: 19% 114px, 85% -20px;
   }
 }
 
@@ -73,7 +73,7 @@
   text-align: center;
   font-weight: 500;
   font-size: 28px;
-  line-height: 28px;
+  line-height: 1;
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
@@ -89,7 +89,8 @@
 @media only screen and (min-width: 1280px) {
   .hero-title {
     font-size: 64px;
-    max-width: 910px;
+    line-height: 1;
+    max-width: 912px;
     top: 0px;
     right: 13%;
   }
