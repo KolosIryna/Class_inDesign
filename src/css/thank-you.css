@@ -3,7 +3,8 @@
   |     Modal window 2
   |============================
 */
-.background.active {
+
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -24,14 +25,14 @@
     visibility var(--duration-timing-func);
 }
 
-/* .background.is-hidden {
+.overlay.is-hidden {
   opacity: 0;
   visibility: hidden;
 
   pointer-events: none;
-} */
+}
 
-.background {
+.overlay {
   transition: opacity var(--duration-timing-func),
     visibility var(--duration-timing-func);
   opacity: 0;
@@ -48,7 +49,7 @@
     opacity var(--duration-timing-func) 250ms;
 }
 
-.modal-thank.active {
+.modal-thank {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -56,7 +57,8 @@
   opacity: 1;
   visibility: visible;
 
-  padding: 40px 20px;
+  padding-top: 68px;
+  padding-bottom: 80px;
 
   width: 335px;
   min-height: 426px;
@@ -72,17 +74,23 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  .modal-thank.active {
+  .modal-thank {
     width: calc(100% - 30px);
   }
 }
 
 @media only screen and (min-width: 768px) {
-  .modal-thank.active {
+  .modal-thank {
     width: 600px;
     min-height: 545px;
     padding: 68px 104px 80px 104px;
   }
+}
+
+.modal-thank.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
 .modal-btn {
