@@ -189,7 +189,6 @@
     gap: 14px;
   }
 }
-
 @media only screen and (min-width: 768px) {
   .h-i-w-card-box {
     padding: 40px 20px;
@@ -299,9 +298,7 @@
   height: 100%;
   object-fit: cover;
 }
-/* |============================
-  | ANIMATION
-  |============================ */
+
 @keyframes move-to-bottom {
   0% {
     opacity: 0;
@@ -313,19 +310,6 @@
   100% {
     opacity: 1;
     transform: translateY(0);
-  }
-}
-@keyframes move-to-left {
-  0% {
-    opacity: 0;
-    transform: translateX(250px);
-  }
-  50% {
-    opacity: 0.6;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
   }
 }
 @keyframes move-to-top {
@@ -341,21 +325,6 @@
     transform: translateY(0);
   }
 }
-@keyframes tracking-in-contract-bck {
-  0% {
-    letter-spacing: 1em;
-    transform: translateZ(300px);
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
-
 .step-one {
   animation: move-to-top 600ms ease-in 200ms both;
 }
@@ -365,7 +334,6 @@
 .step-three {
   animation: move-to-top 600ms ease-in 1000ms both;
 }
-
 .step-one > .h-i-w-card-box {
   animation: move-to-bottom 600ms ease-in 200ms both;
 }
