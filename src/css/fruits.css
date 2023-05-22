@@ -136,15 +136,46 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.order-animation {
+  animation: jello-vertical 1.2s 4s 5 both;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 .order-btn {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
   align-items: center;
+
   width: 80px;
   height: 80px;
   margin: 0 auto;
   gap: 4px;
+
   font-weight: 500;
   border: none;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
@@ -152,6 +183,7 @@
   background-color: var(--fruits-color);
   border-radius: 50%;
 }
+
 @media only screen and (min-width: 768px) {
   .order-btn {
     width: 114px;
@@ -165,6 +197,7 @@
   background-color: var(--white-color);
   color: var(--fruits-color);
 }
+
 .fruit-btn-icon {
   transform: rotate(14deg);
   fill: var(--white-color);
