@@ -43,7 +43,7 @@
 
 .modal-o.active {
   position: absolute;
-  top: 75%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(360deg) scale(1);
   opacity: 1;
@@ -105,7 +105,7 @@
     width: 891px;
     min-height: 860px;
 
-    background-size: auto 459px;
+    background-size: auto 420px;
     background-position: bottom right;
     background-image: url(../img/modal-order/desktop/banana_girl_desk@1x.jpg);
   }
@@ -120,7 +120,7 @@
       width: 891px;
       min-height: 860px;
 
-      background-size: auto 459px;
+      background-size: auto 420px;
       background-position: bottom right;
       background-image: url(../img/modal-order/desktop/banana_girl_desk@2x.jpg);
     }
@@ -260,14 +260,15 @@
 
 .product-img {
   margin-top: 16px;
-  margin-right: 32px;
   margin-bottom: 8px;
+  margin-right: 32px;
 }
 
 /* ---------TABLET WINDOW----------- */
 @media only screen and (min-width: 768px) {
   .product-img {
     margin: 4px auto 14px;
+
   }
 }
 
@@ -276,6 +277,15 @@
   top: 14px;
   right: 14px;
   cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+  .agreement {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .product-check {
