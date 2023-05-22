@@ -7,6 +7,15 @@
   width: 100%;
 }
 
+.footer-section .container {
+}
+@media only screen and (min-width: 768px) {
+  .footer-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 /* Mobile phone */
 
 .footer {
@@ -16,10 +25,12 @@
 .logosection-links {
   margin-bottom: 24px;
 }
-
+@media only screen and (min-width: 1280px) {
+  .logosection-links {
+    margin-bottom: 0;
+  }
+}
 .main-logo {
-  margin-top: 10px;
-  padding: 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -31,7 +42,9 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   margin-left: 8px;
+  margin-bottom: 24px;
 }
+
 .logo-icon {
   fill: var(--red-color);
   margin-right: 8px;
@@ -103,56 +116,37 @@
   color: var(--red-color);
   display: block;
   max-width: 140px;
-  height: 54px;
   margin-left: auto;
   margin-right: auto;
+  letter-spacing: -0.02em;
 }
 
-.main-logo {
-  display: flex;
-  justify-content: center;
-  max-height: 18px;
-  margin-top: 10px;
-}
 .links-section {
   margin-bottom: 52px;
 }
 
-.social-media-list {
-  justify-content: center;
-}
 .contact-information {
   text-align: center;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-  .footer {
-    width: 582px;
-    flex-wrap: wrap;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .footer {
-    margin-left: 0;
+    width: 342px;
     display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 0;
   }
   .footer-img {
     margin-bottom: 20px;
   }
 
-  .navigation {
-    margin-left: 70px;
-  }
-
-  .footer-section {
+  /* .footer-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  .navigation {
-    margin-left: 70px;
-  }
+  } */
 
   .main-logo {
     margin-bottom: 80px;
@@ -173,22 +167,9 @@
   .address-text {
     font-size: 18px;
     max-width: 180px;
-    height: 72px;
     display: block;
 
     text-align: left;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .footer-container {
-    display: flex;
-  }
-
-  .footer {
-    align-items: flex-start;
-    display: flex;
-    margin-right: 232px;
   }
 }
 
@@ -199,8 +180,9 @@
 
   .footer {
     align-items: flex-start;
-    display: flex;
     margin-right: 232px;
+    flex-direction: row;
+    width: auto;
   }
 
   .main-logo {
@@ -218,7 +200,6 @@
   .address-text {
     display: block;
     max-width: 180px;
-    height: 72px;
     text-align: left;
   }
 }
