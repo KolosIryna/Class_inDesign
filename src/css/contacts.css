@@ -81,13 +81,6 @@
   }
 }
 
-.contacts-picture-one {
-}
-.contacts-picture-two {
-}
-.img-one {
-}
-
 @media only screen and (min-width: 768px) {
   .img-one {
     width: 344px;
@@ -99,8 +92,6 @@
   }
 }
 
-.img-two {
-}
 @media only screen and (min-width: 1280px) {
   .img-two {
     width: 400px;
@@ -140,9 +131,6 @@
   .contacts-form {
     display: none;
   }
-}
-
-.contacts-label {
 }
 
 .contacts-input-box {
