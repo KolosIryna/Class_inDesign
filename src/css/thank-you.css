@@ -3,51 +3,72 @@
   |     Modal window 2
   |============================
 */
-.background {
+
+.overlay {
   position: fixed;
   top: 0;
   left: 0;
+  overflow: auto;
 
   width: 100%;
   height: 100%;
 
-  opacity: 1;
-  visibility: visible;
-  pointer-events: initial;
+  z-index: 9999;
+
+  background-color: rgba(46, 47, 66, 0.4);
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: opacity var(--duration-timing-func),
+    visibility var(--duration-timing-func);
 }
 
-.background.is-hidden {
+.modal-active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.modal-thank {
+  transform: translate(-50%, -50%) rotate(0deg) scale(0.01);
   opacity: 0;
   visibility: hidden;
-
-  pointer-events: none;
+  transition: transform var(--duration-timing-func) 250ms,
+    opacity var(--duration-timing-func) 250ms;
 }
 
-.modal-mob {
+.modal-thank {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 1;
+  visibility: visible;
+
+  padding-top: 68px;
+  padding-bottom: 80px;
 
   width: 335px;
   min-height: 426px;
-  padding: 40px 20px;
 
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #e03f5e;
   border-radius: 20px;
+
+  transition: transform var(--duration-timing-func) 250ms,
+    opacity var(--duration-timing-func) 250ms;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-  .modal {
+  .modal-thank {
     width: calc(100% - 30px);
   }
 }
+
 @media only screen and (min-width: 768px) {
-  .modal {
+  .modal-thank {
     width: 600px;
     min-height: 545px;
     padding: 68px 104px 80px 104px;
@@ -62,30 +83,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  width: 24px;
-  height: 24px;
-
+  /* width: 28px;
+  height: 28px; */
   color: var(--white-color);
-  background-color: #e03f5e;
+  background-color: transparent;
+  border: none;
+  outline: none;
 
   cursor: pointer;
 }
 
-/* .modal-btn:hover,
-.modal-btn:focus {
-  fill: rgba(174, 19, 50, 0.1);
-} */
-
-.modal__cross {
-  width: 15px;
-  height: 15px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  fill: #444;
-  cursor: pointer;
+.modal-close-iconx {
+  stroke: var(--white-color);
 }
+
 .modal-img {
   margin-right: auto;
   margin-left: auto;

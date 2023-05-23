@@ -35,5 +35,22 @@
     <symbol id="icon-youtube" viewBox="0 0 32 32">
       <path d="M24.24 6c-1.36-.08-4.16-.16-8.4-.16h-.56c-4.08 0-6.8.08-8.16.24-1.84.16-3.12.64-3.84 1.28-.64.56-1.12 1.6-1.28 2.96-.08.88-.16 2.72-.16 5.52v.4c0 2.64.08 4.48.24 5.36.24 1.28.64 2.24 1.44 2.8.8.64 2.16 1.04 4.08 1.2 1.36.08 4.16.16 8.4.16h.56c4.08 0 6.8-.08 8.16-.24 1.84-.16 3.12-.64 3.84-1.28.64-.56 1.12-1.6 1.28-2.96.08-.88.16-2.72.16-5.52v-.4c0-2.64-.08-4.48-.24-5.36-.24-1.28-.64-2.24-1.44-2.8-.8-.64-2.16-1.04-4.08-1.2zm-3.12 9.84-8.8 5.28V10.56l8.8 5.28z"/>
     </symbol>
+    <!-- Modal icons -->
+    <symbol id="icon-icon-close" viewBox="0 0 32 32">
+      <path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16"></path>
+      <path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8 8l16 16"></path>
+    </symbol>
+    <symbol id="icon-checked" viewBox="0 0 32 32">
+      <path fill="#fff" style="fill: var(--color1, #fff)" d="M19.807 10.527c0.372-0.549 1.118-0.692 1.667-0.32s0.692 1.118 0.32 1.667l-6.508 9.6c-0.476 0.702-1.51 0.702-1.986 0l-3.091-4.56c-0.372-0.549-0.229-1.295 0.32-1.667s1.295-0.229 1.667 0.32l2.098 3.095 5.515-8.135z"></path>
+      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3" d="M8 1.5h16c3.59 0 6.5 2.91 6.5 6.5v16c0 3.59-2.91 6.5-6.5 6.5h-16c-3.59 0-6.5-2.91-6.5-6.5v-16c0-3.59 2.91-6.5 6.5-6.5z"></path>
+    </symbol>
+    <symbol id="icon-unchecked" viewBox="0 0 32 32">
+      <path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3" d="M8 1.5h16c3.59 0 6.5 2.91 6.5 6.5v16c0 3.59-2.91 6.5-6.5 6.5h-16c-3.59 0-6.5-2.91-6.5-6.5v-16c0-3.59 2.91-6.5 6.5-6.5z"></path>
+    </symbol>
+    <!-- scroll -->
+    <symbol id="icon-arrow-up2" viewBox="0 0 32 32">
+       <path d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path>
+    </symbol>
+    
   </defs>
 </svg>

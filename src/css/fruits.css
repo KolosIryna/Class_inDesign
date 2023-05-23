@@ -1,0 +1,223 @@
+.fruit-section {
+  padding-top: 40px;
+  padding-bottom: 93px;
+}
+@media only screen and (min-width: 768px) {
+  .fruit-section {
+    padding-top: 72px;
+    padding-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .fruit-section {
+    padding-top: 75px;
+    padding-bottom: 164px;
+  }
+}
+.fruits-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.1;
+}
+.fruit-text-p {
+  text-align: center;
+  max-width: 335px;
+  margin: auto;
+  margin-top: 14px;
+  margin-bottom: 44px;
+}
+@media only screen and (min-width: 768px) {
+  .fruit-text-p {
+    max-width: 547px;
+  }
+}
+.fruit-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 44px;
+}
+@media only screen and (min-width: 768px) {
+  .fruit-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+.fruit-card-item {
+  position: relative;
+  border-radius: 20px;
+  padding: 64px 24px 52px 24px;
+  max-width: 335px;
+  height: 465px;
+}
+@media only screen and (min-width: 768px) {
+  .fruit-card-item {
+    max-width: calc((100% - (24px * 1)) / 2);
+    /* max-width: 344px; */
+    /* width: 344px; */
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .fruit-card-item {
+    max-width: calc((100% - (24px * 2)) / 3);
+    /* max-width: 389px; */
+    /* width: 389px; */
+  }
+}
+.one {
+  background: var(--strawberry-color);
+}
+.two {
+  background: var(--apple-color);
+}
+.three {
+  background: var(--fruits-color);
+}
+.four {
+  background: #bfd663;
+}
+.five {
+  background: #e93f29;
+}
+.six {
+  background: #db4f4b;
+}
+.seven {
+  background: #9b5366;
+}
+.eight {
+  background: #f47f4c;
+}
+.nine {
+  background: #98b37e;
+}
+@media only screen and (max-width: 1279px) {
+  .nine {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .eight {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .seven {
+    display: none;
+  }
+}
+.fruit-text-box {
+  margin-bottom: 4px;
+}
+.fruit-title-card {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 8px;
+}
+@media only screen and (min-width: 768px) {
+  .fruit-title-card {
+    font-size: 32px;
+    line-height: 1.19;
+  }
+}
+.plant-p {
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: -0.02em;
+}
+.fruit-img {
+  max-width: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.order-animation {
+  animation: jello-vertical 1.2s 4s 5 both;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.order-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  gap: 4px;
+
+  font-weight: 500;
+  border: none;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  transform: rotate(-14deg);
+  background-color: var(--fruits-color);
+  border-radius: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .order-btn {
+    width: 114px;
+    height: 114px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+.order-btn:hover,
+.order-btn:focus {
+  background-color: var(--white-color);
+  color: var(--fruits-color);
+}
+
+.fruit-btn-icon {
+  transform: rotate(14deg);
+  fill: var(--white-color);
+}
+.order-btn:hover > .fruit-btn-icon,
+.order-btn:focus > .fruit-btn-icon {
+  fill: var(--fruits-color);
+}
+.price-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 24px;
+  bottom: 24px;
+  border-radius: 200px;
+  width: 126px;
+  height: 42px;
+  background-color: var(--white-color);
+}
+.price-text {
+  color: var(--text-red-color);
+}
