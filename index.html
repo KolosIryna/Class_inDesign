@@ -22,7 +22,7 @@
 
     
     <script type="module" crossorigin src="/Class_inDesign/assets/index-3e081eaa.js"></script>
-    <link rel="stylesheet" href="/Class_inDesign/assets/index-7a4b5cd1.css">
+    <link rel="stylesheet" href="/Class_inDesign/assets/index-47691698.css">
   </head>
 
   <body>
@@ -627,10 +627,11 @@
 
     <!-- ==================-MODAL WINDOW==============-->
 <!-- =================-CLOSE BUTTON===============-->
-<div class="js-overlay-modal backdrop-o">
-  <div class="modal-o modal active" data-modal="1">
-    <button type="button" class="modal-close js-modal-close" aria-label="Close">
-      <svg class="modal-close-icon">
+<div class="js-overlay-modal backdrop-o"></div>
+<div class="hidden-backdrop">
+  <div class="modal-o modal" data-modal="1">
+    <button type="button" class="modal-close" aria-label="Close">
+      <svg class="modal-close-icon js-modal-close">
         <use href="/Class_inDesign/assets/icons-766296df.svg#icon-icon-close"></use>
       </svg>
     </button>
@@ -847,6 +848,7 @@
             required
             pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$"
             minlength="2"
+            title="username consisting of at least two letters"
             class="form-input"
           />
         </label>
@@ -858,6 +860,7 @@
             id="user_email"
             placeholder="Enter email.."
             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            title="user-mail@mail.com"
             required
             class="form-input"
           />
@@ -871,7 +874,7 @@
             placeholder="Enter card.."
             required
             pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}"
-            title="xxxx-xxxx-xxxx-xxxx"
+            title="xxxx-xxxx-xxxx-xxxx numeric values only"
             class="form-input"
           />
         </label>
@@ -888,7 +891,7 @@
       <!--============BUTTON SUBMIT===========-->
       <button
         type="submit"
-        class="submit-btn js-modal-close"
+        class="submit-btn close-btn"
         aria-label="Button submit"
         data-modal="1"
       >
