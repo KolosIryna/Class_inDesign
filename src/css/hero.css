@@ -7,15 +7,16 @@
 @media only screen and (min-width: 768px) {
   .hero-section {
     padding-top: 122px;
-    padding-bottom: 137px;
+    padding-bottom: 65px;
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .hero-section {
-    padding-bottom: 150px;
+    padding-bottom: 75px;
   }
 }
+
 /**
     |============================
     | hero-container
@@ -28,25 +29,50 @@
   text-align: center;
   padding-top: 48px;
 
-  background-image: url(../img/images-hero/banana_mobile@1x.png),
-    url(../img/images-hero/strawberry_mobile@1x.png);
+  background-image: url(../img/images-hero/banana-mobile@1x.webp),
+    url(../img/images-hero/strawberry-mobile@1x.webp);
   background-position: 10px 55px, 100% 4px;
-
   background-repeat: no-repeat;
+
+  background-size: 66px, 56px;
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .hero-section .container {
+    background-image: url(../img/images-hero/banana-mobile@2x.webp),
+      url(../img/images-hero/strawberry-mobile@2x.webp);
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-section .container {
-    background-image: url(../img/images-hero/banana_tab@1x.png),
-      url(../img/images-hero/strawberry_tab@1x.png);
-    background-position: 12px 86px, 98% -16px;
+    background-image: url(../img/images-hero/banana-tab@1x.webp),
+      url(../img/images-hero/strawberry-tab@1x.webp);
+    background-position: 12px 86px, 97% -20px;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    column-gap: 142px;
+    column-gap: 140px;
     padding-top: 26px;
+    background-size: 132px, 115px;
   }
 }
+
+@media only screen and (min-width: 768px) {
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-section .container {
+      background-image: url(../img/images-hero/banana-tab@2x.webp),
+        url(../img/images-hero/strawberry-tab@2x.webp);
+    }
+  }
+}
+
+
 @media only screen and (min-width: 1280px) {
   .hero-section .container {
     flex-wrap: nowrap;
@@ -55,9 +81,22 @@
     column-gap: 86px;
     padding-top: 0;
     padding: 0 62px;
-    background-image: url(../img/images-hero/banana_@1x.png),
-      url(../img/images-hero/strawberry_@1x.png);
-    background-position: 19% 114px, 85% -20px;
+    background-image: url(../img/images-hero/banana-desk@1x.webp),
+      url(../img/images-hero/strawberry-desk@1x.webp);
+    background-position: 19% 114px, 84% -28px;
+    background-size: 190px, 130px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .hero-section .container {
+      background-image: url(../img/images-hero/banana-desk@2x.webp),
+        url(../img/images-hero/strawberry-desk@2x.webp);
+    }
   }
 }
 
@@ -86,6 +125,7 @@
     top: -7px;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .hero-title {
     font-size: 64px;
@@ -95,6 +135,7 @@
     right: 13%;
   }
 }
+
 /**
     |============================
     | left
@@ -112,12 +153,15 @@
     width: calc((100% - 142px) / 2);
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .hero-left {
+    max-width: 249px;
     margin-top: 350px;
     order: 1;
   }
 }
+
 /**
     |============================
     | text
@@ -140,9 +184,10 @@
 
 @media only screen and (min-width: 1280px) {
   .hero-text {
-    max-width: 217px;
+    max-width: 222px;
   }
 }
+
 .text {
   display: block;
   font-weight: 400;
@@ -164,6 +209,7 @@
   border-radius: 500px;
   padding: 28px 25px 40px 24px;
 }
+
 @media only screen and (min-width: 768px) {
   .wraper-left {
     align-self: end;
@@ -171,7 +217,7 @@
   }
 }
 
-.wraper-left > img {
+.wraper-left>img {
   margin-bottom: 2px;
 }
 
@@ -182,12 +228,15 @@
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+
 .text-green {
   width: 155px;
 }
+
 .text-yellow {
   width: 163px;
 }
+
 /**
     |============================
     | center
@@ -206,6 +255,7 @@
     margin-right: auto;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .hero-center {
     margin-bottom: 103px;
@@ -215,18 +265,19 @@
 .hero-img {
   position: relative;
   z-index: -1;
+
+  margin: 0 auto;
   padding: 12px 12px 13px;
+  max-width: inherit;
   border-radius: 500px;
   background: linear-gradient(rgba(174, 19, 50), rgba(174, 19, 50)) padding-box,
-    linear-gradient(
-        to top,
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0.27),
-        rgba(255, 255, 255, 0)
-      )
-      border-box;
+    linear-gradient(to top,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.27),
+      rgba(255, 255, 255, 0)) border-box;
   border: 1.5px solid transparent;
 }
+
 @media only screen and (min-width: 768px) {
   .hero-img {
     padding: 20px 17px;
@@ -235,31 +286,39 @@
 
 .btn-animation {
   animation: jello-vertical 1.2s 4s 5 both;
+
 }
 
 @keyframes jello-vertical {
   0% {
     transform: scale3d(1, 1, 1);
   }
+
   30% {
     transform: scale3d(0.75, 1.25, 1);
   }
+
   40% {
     transform: scale3d(1.25, 0.75, 1);
   }
+
   50% {
     transform: scale3d(0.85, 1.15, 1);
   }
+
   65% {
     transform: scale3d(1.05, 0.95, 1);
   }
+
   75% {
     transform: scale3d(0.95, 1.05, 1);
   }
+
   100% {
     transform: scale3d(1, 1, 1);
   }
 }
+
 .btn-link {
   position: absolute;
 
@@ -270,6 +329,7 @@
   align-items: center;
   width: 80px;
   height: 80px;
+
 
   background-color: var(--white-color);
   border-radius: 50%;
@@ -291,6 +351,7 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   color: var(--text-red-color);
 }
+
 .btn-link-text:hover,
 .btn-link-text:focus {
   color: var(--green-color);
@@ -304,6 +365,7 @@
     bottom: -18px;
     right: 38%;
   }
+
   .btn-link-text {
     font-weight: 500;
     font-size: 20px;
@@ -314,6 +376,7 @@
     color: var(--text-red-color);
   }
 }
+
 /**
     |============================
     | right
@@ -367,6 +430,7 @@
   justify-content: center;
   gap: 8px;
 }
+
 @media only screen and (min-width: 1280px) {
   .list-btn {
     position: absolute;
@@ -424,6 +488,7 @@
     width: auto;
   }
 }
+
 @media only screen and (min-width: 1280px) {
   .list-btn {
     width: 268px;
