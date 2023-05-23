@@ -137,7 +137,7 @@
   margin-right: auto;
 }
 
-.order-animation {
+/* .order-animation {
   animation: jello-vertical 1.2s 4s 5 both;
 }
 
@@ -163,7 +163,7 @@
   100% {
     transform: scale3d(1, 1, 1);
   }
-}
+} */
 
 .order-btn {
   display: flex;

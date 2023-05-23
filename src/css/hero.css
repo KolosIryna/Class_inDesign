@@ -38,8 +38,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-section .container {
     background-image: url(../img/images-hero/banana-mobile@2x.webp),
       url(../img/images-hero/strawberry-mobile@2x.webp);
@@ -61,17 +61,15 @@
 }
 
 @media only screen and (min-width: 768px) {
-
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-section .container {
       background-image: url(../img/images-hero/banana-tab@2x.webp),
         url(../img/images-hero/strawberry-tab@2x.webp);
     }
   }
 }
-
 
 @media only screen and (min-width: 1280px) {
   .hero-section .container {
@@ -89,10 +87,9 @@
 }
 
 @media only screen and (min-width: 1280px) {
-
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero-section .container {
       background-image: url(../img/images-hero/banana-desk@2x.webp),
         url(../img/images-hero/strawberry-desk@2x.webp);
@@ -217,7 +214,7 @@
   }
 }
 
-.wraper-left>img {
+.wraper-left > img {
   margin-bottom: 2px;
 }
 
@@ -271,10 +268,13 @@
   max-width: inherit;
   border-radius: 500px;
   background: linear-gradient(rgba(174, 19, 50), rgba(174, 19, 50)) padding-box,
-    linear-gradient(to top,
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 0.27),
-      rgba(255, 255, 255, 0)) border-box;
+    linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.27),
+        rgba(255, 255, 255, 0)
+      )
+      border-box;
   border: 1.5px solid transparent;
 }
 
@@ -284,7 +284,7 @@
   }
 }
 
-.btn-animation {
+/* .btn-animation {
   animation: jello-vertical 1.2s 4s 5 both;
 
 }
@@ -317,7 +317,7 @@
   100% {
     transform: scale3d(1, 1, 1);
   }
-}
+} */
 
 .btn-link {
   position: absolute;
@@ -329,7 +329,6 @@
   align-items: center;
   width: 80px;
   height: 80px;
-
 
   background-color: var(--white-color);
   border-radius: 50%;
