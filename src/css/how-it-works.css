@@ -298,7 +298,11 @@
   height: 100%;
   object-fit: cover;
 }
-
+/**
+  |============================
+  | ANAMATION
+  |============================
+*/
 @keyframes move-to-bottom {
   0% {
     opacity: 0;
@@ -326,20 +330,20 @@
   }
 }
 .step-one {
-  animation: move-to-top 600ms ease-in 200ms both;
+  animation: move-to-top 650ms ease-in 200ms both;
 }
 .step-two {
-  animation: move-to-top 600ms ease-in 600ms both;
+  animation: move-to-top 650ms ease-in 600ms both;
 }
 .step-three {
-  animation: move-to-top 600ms ease-in 1000ms both;
+  animation: move-to-top 650ms ease-in 1000ms both;
 }
 .step-one > .h-i-w-card-box {
-  animation: move-to-bottom 600ms ease-in 200ms both;
+  animation: move-to-bottom 650ms ease-in 200ms both;
 }
 .step-two > .h-i-w-card-box {
-  animation: move-to-bottom 600ms ease-in 600ms both;
+  animation: move-to-bottom 650ms ease-in 600ms both;
 }
 .step-three > .h-i-w-card-box {
-  animation: move-to-bottom 600ms ease-in 1000ms both;
+  animation: move-to-bottom 650ms ease-in 1000ms both;
 }
