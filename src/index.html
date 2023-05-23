@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fresh harvest box is your 0ne-stop place for a delicious fruit basket."
+    />
+
     <title>Class_inDesign</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,27 +22,26 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
       rel="stylesheet"
     />
+    <!-- Animate -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <load scr="partials/header.html" />
-    <load scr="partials/hero.html" />
-    <load scr="partials/how-it-works.html" />
-    <load scr="partials/fruits.html" />
-    <load scr="partials/contacts.html" />
+    <main>
+      <load scr="partials/hero.html" />
+      <load scr="partials/how-it-works.html" />
+      <load scr="partials/fruits.html" />
+      <load scr="partials/contacts.html" />
+    </main>
     <load scr="partials/footer.html" />
-    <load scr="partials/modal.html" />
 
+    <load scr="partials/modal-order.html" />
+    <load scr="partials/thank-you.html" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="/main.js"></script>
-    <!-- Підключення скрипту для мобільного меню -->
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

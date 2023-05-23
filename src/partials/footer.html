@@ -1,69 +1,115 @@
+<!-- Footer (Ірина Баландіна) -->
 <footer class="footer-section">
-    <div class="footer-container">
-    <div class="logosection">
-        <img class="img"   srcset="./img/footer-image/imagegirl-with-banabas-mob.jpg  1x, 
-        ./img/footer-image/imagegirl-with-banabas-mob@2x.jpg 2x"
-        src="./img/footer-image/girl-with-bananas.jpg" alt="girl-with-bananas" width="335" height="172" />
-        <a href="">
-            <svg class="logo-icon" width="16" heigh="16">
-                <use href=""></use>
-            </svg>
+  <div class="container">
+    <div class="footer">
+      <div class="logosection-links">
+        <picture>
+          <source
+            srcset="
+              ./img/footer-image/imagegirl-with-bananas.webp    1x,
+              ./img/footer-image/imagegirl-with-bananas@2x.webp 2x
+            "
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="
+              ./img/footer-image/imagegirl-with-bananas-mob.webp    1x,
+              ./img/footer-image/imagegirl-with-bananas-mob@2x.webp 2x
+            "
+            media="(max-width:767px)"
+          />
+          <img
+            src="./img/footer/footer-girl-mob.png"
+            alt="photo girl with bananas"
+            width="335"
+            height="172"
+          />
+        </picture>
+        <a class="main-logo" href="index.html">
+          <svg class="logo-icon" width="16" height="16">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+          FRESH HARVEST BOX
         </a>
-<h3 class="logo-name">FRESH HARVEST BOX</h3>
-    </div>
-    <div class="links-section">
-        <nav class="navigation-links">
-        <ul class="link-list">
-            <li class="link-item">
-                <a class="navigation-link" href="./how-it-works.html">How It Works</a>
-            </li>
-            <li class="link-item">
-                <a class="navigation-link" href="./fruits.html">Fruits</a>
-            </li>
-            <li class="link-item">
-                <a class="navigation-link" href="./contacts.html">Contacts</a>
-            </li>
+      </div>
+      <nav class="navigation">
+        <ul class="link-list list">
+          <li class="link-item">
+            <a class="navigation-link" href="#how-it-works">How It Works</a>
+          </li>
+          <li class="link-item">
+            <a class="navigation-link" href="#fruits">Fruits</a>
+          </li>
+          <li class="link-item">
+            <a class="navigation-link" href="#contacts">Contacts</a>
+          </li>
         </ul>
-    </nav>
+      </nav>
     </div>
     <div class="contacts-section">
-        <ul class="social-media-list list">
-            <li>
-                <a href="https://uk-ua.facebook.com/" class=""   target="_blank"
-                rel="noopener noreferrer">
-                    <svg class="social-media-icon" width="40" height="40">
-                      <use href=""></use></svg></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" class="" target="_blank"
-                rel="noopener noreferrer" >
-                    <svg class="social-media-icon" width="40" height="40">
-                      <use href=""></use></svg></a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/" class="" target="_blank"
-                rel="noopener noreferrer" >
-                    <svg class="social-media-icon" width="40" height="40">
-                      <use href=""></use>
-                    </svg>
-                    </a>
-            </li>
-        </ul>
-        
-            <ul class="contact-information">
-              <li>
-                <a class="contact link" href="tel:+380684439426">+380 (68) 443-94-26</a>
+      <ul class="social-media-list list">
+        <li class="social-media-item">
+          <a
+            href="https://uk-ua.facebook.com/"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook ikon"
+          >
+            <svg class="social-media-icon" width="28" height="28">
+              <use href="./img/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a
+            href="https://www.instagram.com/"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram ikon"
+          >
+            <svg class="social-media-icon" width="28" height="28">
+              <use href="./img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-media-item">
+          <a
+            href="https://www.youtube.com/"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Youtube ikon"
+          >
+            <svg class="social-media-icon" width="28" height="28">
+              <use href="./img/icons.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <address class="contacts">
+        <ul class="contact-information">
+          <li class="contact-item">
+            <a class="contact-link-mobile link" href="tel:+380684439426"
+              >+380 (68) 443-94-26</a
+            >
           </li>
-          <li>
-            <a class="link" href="https://goo.gl/maps/1GAF71vPJ28Vpoyp6" target="blank" rel="noreferrer noopener" >
-                <span class="address-text">
-                    1678 S. Pioneer Road Salt Lake City UT 84104
-
-                </span>
-            </li>
-               
-            </ul>
-       
+          <li class="contact-item">
+            <a
+              class="contact-link-address link"
+              href="https://goo.gl/maps/1GAF71vPJ28Vpoyp6"
+              target="blank"
+              rel="noreferrer noopener"
+            >
+              <span class="address-text">
+                1678 S. Pioneer Road Salt Lake City <br />
+                UT 84104
+              </span>
+            </a>
+          </li>
+        </ul>
+      </address>
     </div>
-</div>
+  </div>
 </footer>
