@@ -25,7 +25,12 @@
     color: var(--text-red-color);
 
     fill: var(--red-color);
+
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 
 /* Phone */
 @media screen and (max-width: 767px) {
@@ -65,6 +70,10 @@
 
     .basket {
         fill: var(--red-color);
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     .button-basket {
@@ -80,8 +89,12 @@
 
     .header-link {
         color: var(--text-red-color);
-    }
 
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
     .header-list {
         margin-right: 94px;
 
@@ -96,6 +109,19 @@
 @media screen and (min-width: 1280px) {
     .header-list {
         margin-right: 322px;
+    }
+    .site-logo:hover,
+    .site-logo:focus {
+        color: #800000;
+        fill: #800000;
+    }
+    .basket:hover,
+    .baskety:focus {
+        fill: #800000;
+    }
+    .header-link:hover,
+    .header-link:focus {
+        color: #800000;
     }
 }
 
