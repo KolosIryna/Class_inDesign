@@ -268,7 +268,6 @@
 @media only screen and (min-width: 768px) {
   .product-img {
     margin: 4px auto 14px;
-
   }
 }
 
@@ -352,7 +351,7 @@
 .form-input:focus {
   outline: 1px solid var(--fruits-color);
   border: none;
-  width: calc(100%-2%);
+  width: calc(100% - 2%);
 }
 
 .form-input::placeholder {
