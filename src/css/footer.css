@@ -83,7 +83,7 @@ color:var(--red-color);
 .social-media-list {
     margin-bottom: 44px;
     display: flex;
-    justify-content: center;
+   text-align: center;
     gap: 20px;
 }
 
