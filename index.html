@@ -16,7 +16,7 @@
 
     
     <script type="module" crossorigin src="/Class_inDesign/assets/index-4a9470d9.js"></script>
-    <link rel="stylesheet" href="/Class_inDesign/assets/index-c3d2f38f.css">
+    <link rel="stylesheet" href="/Class_inDesign/assets/index-0bc89f1f.css">
   </head>
 
   <body>
@@ -51,14 +51,17 @@
       class="menu-mobile-open js-open-menu"
       type="button"
       aria-label="Menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
     >
       <svg class="menu-mobile-open-icon" width="24" height="24">
         <use href="/Class_inDesign/assets/icons-766296df.svg#icon-hamburger"></use>
       </svg>
     </button>
   </div>
-  <div class="mobile-menu js-menu-container">
-    <div class="container mobil-menu-modal">
+
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <div class="container mobil-menu-modal js-close-menu">
       <button
         class="mobile-menu-close js-close-menu"
         type="button"
@@ -68,19 +71,18 @@
           <use href="/Class_inDesign/assets/icons-766296df.svg#icon-close"></use>
         </svg>
       </button>
+
       <ul class="mobil-nav-list list">
         <li class="mobil-nav-item">
-          <a class="mobil-nav-link current link" href="index.html#how-it-works"
+          <a class="mobil-nav-link current link" href="#how-it-works"
             >How It Works</a
           >
         </li>
         <li class="mobil-nav-item">
-          <a class="mobil-nav-link link" href="index.html#fruits">Fruits</a>
+          <a class="mobil-nav-link link" href="#fruits">Fruits</a>
         </li>
         <li class="mobil-nav-item">
-          <a class="mobil-nav-link link" href="index.html#contacts"
-            >Contacts</a
-          >
+          <a class="mobil-nav-link link" href="#contacts">Contacts</a>
         </li>
       </ul>
       <button
@@ -104,7 +106,7 @@
       fresh harvest box <br />
       is your One-stop place for a delicious fruit basket
     </h1>
-    <div class="hero-left" preload="auto">
+    <div class="hero-left">
       <p class="hero-text">
         Our expertly curated fruit baskets are made with the freshest, highest
         quality fruits available. Whether you are looking for a healthy snack or
@@ -142,7 +144,6 @@
           src="/Class_inDesign/assets/hero_mobile@1x-6081f081.webp"
           alt="girl with orange"
           rel="preload"
-          as="image"
         />
       </picture>
 
@@ -525,8 +526,6 @@
     class="scroll-button button go-top"
     type="button"
     aria-label="Scroll button"
-    scroll-behavior:
-    smooth;
   >
     <svg class="scroll-btn-icon" width="14" height="14">
       <use href="/Class_inDesign/assets/icons-766296df.svg#icon-arrow-up2"></use>
@@ -570,7 +569,7 @@
             ></use>
           </svg>
 
-          <span class="modal-text-box" href="#">
+          <span class="modal-text-box">
             <span class="modal-list-title">Strawberry Basket</span>
             <span class="modal-list-text">Plant</span>
           </span>
@@ -634,7 +633,7 @@
               class="check-icon-unchecked"
             ></use>
           </svg>
-          <span class="modal-text-box" href="#">
+          <span class="modal-text-box">
             <span class="modal-list-title">Apple Basket</span>
             <span class="modal-list-text">Plant</span>
           </span>
@@ -698,7 +697,7 @@
               class="check-icon-unchecked"
             ></use>
           </svg>
-          <span class="modal-text-box" href="#">
+          <span class="modal-text-box">
             <span class="modal-list-title">Fruits Basket</span>
             <span class="modal-list-text">Plant</span>
           </span>
