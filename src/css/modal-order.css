@@ -244,6 +244,7 @@
     display: block;
     margin-bottom: 0;
     width: calc((100% - 24px) / 3);
+    cursor: pointer;
   }
 }
 
@@ -251,6 +252,7 @@
   display: block;
   margin-top: 20px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 /* ---------TABLET WINDOW----------- */
@@ -360,11 +362,10 @@
   padding-left: 24px;
   padding-right: 24px;
 
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 100px;
-  outline: none;
-  transition: outline var(--duration-timing-func),
-    border var(--duration-timing-func);
+  border: none;
+  transition: outline var(--duration-timing-func);
 
   font-size: 14px;
   line-height: 1.29;
@@ -375,7 +376,7 @@
 
 .form-input:focus {
   outline: 1px solid var(--fruits-color);
-  border: none;
+
   width: calc(100%-2%);
 }
 
@@ -397,11 +398,10 @@
   resize: none;
   overflow: auto;
 
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  outline: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 20px;
-  outline: 1px solid transparent;
-  transition: outline var(--duration-timing-func),
-    border var(--duration-timing-func);
+  border: none;
+  transition: outline var(--duration-timing-func);
 
   font-size: 14px;
   line-height: 1.29;
@@ -410,7 +410,6 @@
 
 .text-area:focus {
   outline-color: var(--fruits-color);
-  border: transparent;
 }
 
 .text-area::placeholder {

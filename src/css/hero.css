@@ -38,8 +38,8 @@
 }
 
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
   .hero-section .container {
     background-image: url(../img/images-hero/banana-mobile@2x.webp),
       url(../img/images-hero/strawberry-mobile@2x.webp);
@@ -61,9 +61,10 @@
 }
 
 @media only screen and (min-width: 768px) {
+
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero-section .container {
       background-image: url(../img/images-hero/banana-tab@2x.webp),
         url(../img/images-hero/strawberry-tab@2x.webp);
@@ -87,9 +88,10 @@
 }
 
 @media only screen and (min-width: 1280px) {
+
   @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
     .hero-section .container {
       background-image: url(../img/images-hero/banana-desk@2x.webp),
         url(../img/images-hero/strawberry-desk@2x.webp);
@@ -118,7 +120,7 @@
   .hero-title {
     font-size: 50px;
     line-height: 1.08;
-    max-width: 710px;
+
     top: -7px;
   }
 }
@@ -127,7 +129,7 @@
   .hero-title {
     font-size: 64px;
     line-height: 1;
-    max-width: 912px;
+    max-width: 921px;
     top: 0px;
     right: 13%;
   }
@@ -214,7 +216,7 @@
   }
 }
 
-.wraper-left > img {
+.wraper-left>img {
   margin-bottom: 2px;
 }
 
@@ -240,6 +242,7 @@
     |============================
   */
 .hero-center {
+  position: relative;
   margin-bottom: 71px;
   position: relative;
   order: 1;
@@ -260,21 +263,16 @@
 }
 
 .hero-img {
-  position: relative;
-  z-index: -1;
-
   margin: 0 auto;
   padding: 12px 12px 13px;
-  max-width: inherit;
+
+  overflow: hidden;
   border-radius: 500px;
   background: linear-gradient(rgba(174, 19, 50), rgba(174, 19, 50)) padding-box,
-    linear-gradient(
-        to top,
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0.27),
-        rgba(255, 255, 255, 0)
-      )
-      border-box;
+    linear-gradient(to top,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.27),
+      rgba(255, 255, 255, 0)) border-box;
   border: 1.5px solid transparent;
 }
 
@@ -286,6 +284,16 @@
 
 .btn-animation {
   animation: jello-vertical 1.2s 4s 5 both;
+  position: absolute;
+  bottom: -5%;
+  left: 38%;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-animation {
+    bottom: -3%;
+  }
 }
 
 @keyframes jello-vertical {
@@ -319,10 +327,7 @@
 }
 
 .btn-link {
-  position: absolute;
 
-  bottom: -30px;
-  right: 37%;
   display: flex;
   justify-content: center;
   align-items: center;
