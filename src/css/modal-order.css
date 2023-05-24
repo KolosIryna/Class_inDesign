@@ -316,6 +316,7 @@
 
 .product-check {
   appearance: none;
+  position: absolute;
 }
 
 .check-icon-unchecked {
