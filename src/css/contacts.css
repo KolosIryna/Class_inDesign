@@ -200,8 +200,6 @@
   fill: var(--white-color);
   border-radius: 50%;
   border: none;
-
-  scroll-behavior: smooth;
 }
 @media only screen and (min-width: 768px) {
   .scroll-button {
