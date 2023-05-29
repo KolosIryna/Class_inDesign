@@ -70,9 +70,15 @@
   .basket {
     fill: var(--red-color);
 
-    transition-property: fill;
+    /* transition-property: fill;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
+    transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      -moz-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .button-basket {
@@ -89,9 +95,15 @@
   .header-link {
     color: var(--text-red-color);
 
-    transition-property: color;
+    /* transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+
+    transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      -moz-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .header-list {
@@ -116,11 +128,22 @@
   }
   .basket:hover,
   .baskety:focus {
-    fill: #800000;
+    fill: #db4f4b;
+
+    border-radius: 4px;
+    box-shadow: 1px 2px 7px 2px rgba(226, 181, 181, 0.75);
+    -webkit-box-shadow: 1px 2px 7px 2px rgba(226, 181, 181, 0.75);
+    -moz-box-shadow: 1px 2px 7px 2px rgba(226, 181, 181, 0.75);
   }
+
   .header-link:hover,
   .header-link:focus {
-    color: #800000;
+    color: #db4f4b;
+
+    border-radius: 4px;
+    box-shadow: 1px 2px 7px 2px rgba(226, 181, 181, 0.75);
+    -webkit-box-shadow: 1px 2px 7px 2px rgba(226, 181, 181, 0.75);
+    -moz-box-shadow: 1px 2px 7px 2px rgba(226, 181, 181, 0.75);
   }
 }
 

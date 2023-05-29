@@ -196,27 +196,50 @@
     padding-left: 243px;
   }
   .navigation-link {
-    padding: 15px 0;
+    /* padding: 15px 0; */
     color: var(--red-color);
-    transition-property: color;
+    /* transition-property: color;
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+    transition: border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      -moz-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .logo-icon:hover {
+  .logo-icon:hover,
+  .logo-icon:focus {
     fill: #800000;
   }
 
-  .main-logo:hover {
+  .main-logo:hover,
+  .main-logo:focus {
     color: #800000;
   }
 
-  .navigation-link:hover {
-    color: #800000;
+  .navigation-link:hover,
+  .navigation-link:focus {
+    color: #db4f4b;
+
+    border-radius: 4px;
+    box-shadow: 1px 2px 7px 2px rgba(226, 181, 181, 0.75);
+    -webkit-box-shadow: 1px 2px 7px 2px rgba(226, 181, 181, 0.75);
+    -moz-box-shadow: 1px 2px 7px 2px rgba(226, 181, 181, 0.75);
+  }
+
+  .contact-link-mobile:hover,
+  .contact-link-mobile:focus {
+    color: #db4f4b;
   }
 
   .address-text {
     display: block;
     max-width: 180px;
     text-align: left;
+  }
+
+  .address-text:hover,
+  .address-text:focus {
+    color: #db4f4b;
   }
 }
