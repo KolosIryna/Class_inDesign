@@ -34,6 +34,7 @@
   justify-content: center;
   margin-top: 20px;
   color: var(--red-color);
+  fill: var(--red-color);
 
   font-weight: 700;
   font-size: 14px;
@@ -48,7 +49,7 @@
 }
 
 .logo-icon {
-  fill: var(--red-color);
+
   margin-right: 8px;
 }
 
@@ -207,14 +208,11 @@
       -moz-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
       color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .logo-icon:hover,
-  .logo-icon:focus {
-    fill: #800000;
-  }
 
   .main-logo:hover,
   .main-logo:focus {
     color: #800000;
+    fill: #800000;
   }
 
   .navigation-link:hover,
